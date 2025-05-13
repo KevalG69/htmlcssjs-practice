@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+    display: none;
+  background-color: rgb(32, 32, 32);
+  padding: 1rem;
+  justify-items: center;
+}
+
+.navbar-mobile
+{
+    display: none;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+  background-color: rgb(117 0 165);
+  border-radius: 5px;
+}
+
+.navbar ul li a.active {
+  background-color: rgb(117 0 165);
+  border-radius: 5px;
+}
+
+.navbar-mobile {
+    display: none;
+    background-color: rgb(32, 32, 32);
+    padding: 1rem;
+    justify-items: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+
+ .navbar-mobile ul {
+  display: flex;
+}
+
+.navbar-mobile ul li {
+  list-style: none;
+}
+
+.navbar-mobile ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem 1.8rem;
+  font-size: 2rem;
+}
+
+.navbar-mobile ul li a:hover {
+  background-color: rgb(117 0 165);
+  border-radius: 5px;
+}
+
+.navbar-mobile ul li a.active {
+  background-color: rgb(117 0 165);
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/* Small device */
+@media (max-width: 575.98px) {
+  body {
+    background-color: red;
+  }
+   .navbar
+  {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+   
+  }
+}
+
+/* landscape device */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background-color: blue;
+  }
+  .navbar
+  {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+   
+  }
+}
+
+/* medium device */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background-color: green;
+  }
+
+  .navbar-mobile
+  {
+    display: none;
+  }
+    .navbar
+  {
+    display:block
+  }
+}
+
+/* large */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    background-color: purple;
+  }
+  .navbar-mobile
+  {
+    display: none;
+  }
+    .navbar
+  {
+    display:block
+  }
+}
+
+/* extra large */
+@media (min-width: 1200px) {
+  body {
+    background-color: orange;
+  }
+  .navbar-mobile
+  {
+    display: none;
+  }
+  .navbar
+  {
+    display:block
+  }
+}
