@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body
+{
+  background-color: rgb(32, 32, 32);
+}
+
+header
+{
+  position: fixed; 
+  z-index: 100;
+  width: 100%;
+  top: 0;
+}
+
+hr
+{
+  
+}
+
+.navbar {
+    display: none;
+    
+  background-color: rgb(26,26,26);
+  padding: 1rem;
+  justify-items: center;
+}
+
+.navbar-mobile
+{
+    display: none;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding-right: 1rem;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+ color: rgb(117 0 165);
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a.active {
+  background-color: rgb(117 0 165);
+  color: white;
+  border-radius: 5px;
+}
+
+.navbar-mobile {
+    display: none;
+    position: sticky;
+    background-color: rgb(32, 32, 32);
+    padding: 1rem;
+    justify-items: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+
+ .navbar-mobile ul {
+  display: flex;
+}
+
+.navbar-mobile ul li {
+  list-style: none;
+    padding-right: 1rem;
+}
+
+.navbar-mobile ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem 1.8rem;
+  font-size: 2rem;
+}
+
+.navbar-mobile ul li a:hover {
+  color: rgb(117 0 165);
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-mobile ul li a.active {
+  background-color: rgb(117 0 165);
+  border-radius: 5px;
+}
+
+
+/* Small device */
+@media (max-width: 575.98px) {
+  body {
+    background-color: red;
+  }
+   .navbar
+  {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+   
+  }
+}
+
+/* landscape device */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background-color: blue;
+  }
+  .navbar
+  {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+   
+  }
+}
+
+/* medium device */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background-color: green;
+  }
+
+  .navbar-mobile
+  {
+    display: none;
+  }
+    .navbar
+  {
+    display:block;
+  }
+}
+
+/* large */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    background-color: purple;
+  }
+  .navbar-mobile
+  {
+    display: none;
+  }
+    .navbar
+  {
+    display:block;
+  }
+}
+
+/* extra large */
+@media (min-width: 1200px) {
+  
+  .navbar-mobile
+  {
+    display: none;
+  }
+  .navbar
+  {
+    display:block;
+      
+  }
+}
+
+
