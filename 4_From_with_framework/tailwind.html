@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>TailWind Form</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --inputBg: #f1f1f1;
+      }
+
+      .image {
+        background-image: url(./img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .font {
+        font-size: 0.8rem;
+      }
+      .inputs {
+        width: 20rem;
+        height: 2.9rem;
+        outline: none;
+      }
+      .inputs::placeholder {
+        font-size: 0.8rem;
+      }
+      .inputs {
+        padding-left: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="bg-gradient-to-l from-[#238c8a] to-[#34b294] h-screen w-screen flex justify-center items-center"
+    >
+      <div class="w-5xl h-[32rem] rounded-3xl flex flex-row">
+        <div class="bg-blue-300 w-xl image rounded-l-3xl"></div>
+        <div class="bg-white w-3xl rounded-r-3xl">
+          <div
+            class="flex flex-col text-center justify-center items-center gap-7"
+          >
+            <div class="w-full">
+              <h1 class="text-[#299c93] text-2xl font-bold">Registration</h1>
+              <p class="text-[0.8rem]">CLICK FOR YOUR SHOOT</p>
+            </div>
+            <form class="flex flex-col gap-2">
+              <div class="flex gap-12 items-center">
+                <label for="name" class="font-bold font">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter Name"
+                  style="background-color: var(--inputBg)"
+                  class="inputs h-12 rounded-sm w-sm"
+                />
+              </div>
+              <div class="flex gap-13 items-center">
+                <label for="email" class="font-bold font">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  style="background-color: var(--inputBg)"
+                  class="inputs h-12 rounded-sm w-sm"
+                />
+              </div>
+              <div class="flex gap-10 items-center">
+                <label for="gen" class="font-bold font">Gender</label>
+                <div class="flex flex-row items-center gap-6">
+                  <input
+                    type="radio"
+                    name="gen"
+                    id="male"
+                    style="background-color: var(--inputBg)"
+                    class="h-12 rounded-sm"
+                  />
+                  <label for="male" class="font-bold">Male</label>
+
+                  <input
+                    type="radio"
+                    name="gen"
+                    id="female"
+                    style="background-color: var(--inputBg)"
+                    class="h-12 rounded-sm"
+                  />
+                  <label for="female" class="font-bold">Female</label>
+                </div>
+              </div>
+
+              <div class="flex gap-2 items-center">
+                <label for="dob" class="font-bold font">Date of Birth</label>
+                <input
+                  type="text"
+                  name="dob"
+                  id="dob"
+                  placeholder="MM/DD/YYYY"
+                  pattern="\d{2}/\d{2}/\d{4}"
+                  style="background-color: var(--inputBg)"
+                  class="inputs h-12 rounded-sm w-sm"
+                />
+              </div>
+
+              <div class="flex gap-15 items-center">
+                <label for="City" class="font-bold font">City</label>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="City"
+                  style="background-color: var(--inputBg)"
+                  class="inputs h-12 rounded-sm w-sm"
+                />
+              </div>
+
+              <div class="flex gap-9 items-center">
+                <label for="country" class="font-bold font">Country</label>
+                <input
+                  type="text"
+                  name="country"
+                  id="country"
+                  placeholder="Country"
+                  style="background-color: var(--inputBg)"
+                  class="inputs h-12 rounded-sm w-sm"
+                />
+              </div>
+
+              <div class="flex gap-17 items-center">
+                <label for="sub" class="font-bold font">Subscription</label>
+                <div class="flex flex-row items-center gap-14">
+                  <input
+                    type="radio"
+                    name="sub"
+                    id="basic"
+                    style="background-color: var(--inputBg)"
+                    class="h-12 rounded-sm hidden peer/basic"
+                  />
+                  <label
+                    for="basic"
+                    class="font-bold cursor-pointer peer-checked/basic:text-[#229a98]"
+                    >Basic</label
+                  >
+
+                  <input
+                    type="radio"
+                    name="sub"
+                    id="silver"
+                    style="background-color: var(--inputBg)"
+                    class="h-12 rounded-sm hidden peer/silver"
+                  />
+                  <label
+                    for="silver"
+                    class="font-bold cursor-pointer peer-checked/silver:text-[#229a98]"
+                    >Silver</label
+                  >
+                  <input
+                    type="radio"
+                    name="sub"
+                    id="gold"
+                    style="background-color: var(--inputBg)"
+                    class="h-12 rounded-sm hidden peer/gold"
+                  />
+                  <label
+                    for="gold"
+                    class="font-bold cursor-pointer peer-checked/gold:text-[#229a98]"
+                    >Gold</label
+                  >
+                </div>
+              </div>
+              <div
+                class="text-white w-full flex justify-end gap-1 h-11 font-bold"
+              >
+                <button class="bg-[#2c294d] w-40">Cancel</button>
+                <button class="bg-[#229a98] w-39">Confirm</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
