@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Materialize Form</title>
+  </head>
+  <body style="display: flex; justify-content: center; align-items: center;">
+    <div class="container " style="width: 30%;">
+      <h4 class="center-align">Sign Up</h4>
+        <form style="border:1px solid black; padding: 1rem; border-radius: 1rem;">
+            <div class="input-field">
+              <input type="text" id="name"/>
+              <label for="name">Full Name</label>
+            </div>
+              <div class="input-field">
+              <input type="email" id="email"/>
+              <label for="email">example@gmail.com</label>
+            </div>
+              <div class="input-field">
+              <input type="password" id="password"/>
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="confirm_password"/>
+              <label for="confirm_password">Confirm Password</label>
+            </div>
+            <div style="width: 100%; display: flex; justify-content: center;">
+              <button type="submit" class="btn waves-effect waves-light" >Submit</button>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
