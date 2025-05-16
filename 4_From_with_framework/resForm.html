@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resForm.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./form.js" defer></script>
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form-wrapper">
+        <h2>Sign Up</h2>
+        <form>
+          <div class="input-wrapper">
+            <div class="input-container">
+              <div class="field">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  autocomplete="off"
+                  required
+                />
+                <div class="labelline">
+                  <i class="fa-solid fa-user" style="color: #3a2aec"></i>
+                  <span> Nick Name </span>
+                </div>
+              </div>
+              <div class="field">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="off"
+                  required
+                />
+                <div class="labelline">
+                  <i
+                    class="fa-solid fa-envelope-open"
+                    style="color: #532bdc"
+                  ></i>
+                  <span> Email </span>
+                </div>
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  autocomplete="off"
+                  required
+                />
+                <div class="labelline">
+                  <i class="fa-solid fa-lock" style="color: #562bde"></i>
+                  <span> Password </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foot">
+            <div class="term">
+              <input type="checkbox" name="term" id="terms" />
+              <label for="terms"
+                >I read and agree To <span>Terms & Conditions</span></label
+              >
+            </div>
+            <div class="btn">
+              <button type="submit">
+                <a href="./resFormStep2.html" style="text-decoration: none; color: white;">
+                  CREATE ACCOUNT
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="signin">
+            <p>
+              Already have an account? <span><a href="#">Sign in</a></span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
