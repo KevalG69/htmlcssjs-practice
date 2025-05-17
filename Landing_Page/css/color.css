@@ -1,0 +1,77 @@
+/* Navbar */
+nav
+{
+    
+}
+
+/* Scrolled Navbar */
+.navbar-scrolled
+{
+    background-color: var(--light);
+}
+
+.navbar-scrolled ul li a
+{
+    color: var(--dark);
+}
+
+nav ul li a
+{
+    color: var(--light);
+    font-weight: bold;
+}
+
+.logo h1
+{
+    color: var(--light);
+}
+
+
+/* giving font to gradient color */
+.navbar-scrolled .logo h1
+{
+    background:linear-gradient(to bottom right,var(--primary),var(--secondary));
+    -webkit-background-clip: text;   
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+
+
+
+.login-btn button
+{
+    background: linear-gradient(to bottom right,var(--primary),var(--secondary));
+    color: var(--light);
+}
+
+.login-btn button:hover
+{
+     background: linear-gradient(to bottom right,var(--secondary),var(--primary));
+}
+
+
+/* hero section */
+.headline-container h1
+{
+    color: var(--light);
+}
+.headline-container p 
+{
+    color: var(--light);
+}
+
+.read-more
+{
+     background: linear-gradient(to bottom right,var(--primary),var(--secondary));
+    color: var(--light);
+}
+
+.contact-us
+{
+     background: linear-gradient(to bottom right,var(--secondary),var(--primary));
+    color: var(--light);
+}
