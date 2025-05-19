@@ -3,58 +3,245 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/media_query.css" />
     <link rel="stylesheet" href="./css/globalVar.css" />
     <link rel="stylesheet" href="./css/color.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
+    <!--Pages -->
     <link rel="stylesheet" href="./css/hero_section.css" />
-
+    <link rel="stylesheet" href="./css/about_section.css" />
+    <link rel="stylesheet" href="./css/feature_section.css" />
+    <link rel="stylesheet" href="./css/donwload_section.css" />
 
     <script src="index.js" defer></script>
 
     <title>FitApp</title>
   </head>
   <body>
-    <nav id="navbar">
-      <a class="logo">
-        <h1>FitApp</h1>
-      </a>
-      <ul>
-        <li><a class="nav-link" href="#home">Home</a></li>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="feature">Feature</a></li>
-        <li><a class="nav-link" href="#pricing">Pricing</a></li>
-        <li><a class="nav-link" href="#review">Review</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-      <div class="login-btn">
-        <button>Start Free Trial</button>
-      </div>
-    </nav>
-    <main role="main">
-      <section id="home" class="hero-section">
-        <div class="hero-wrapper">
-          <div class="headline-container">
-            <h1>
-              The Revolutionary App That Helps To Control Your Own Fitness
-            </h1>
-            <p>
-              Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet
-              dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam
-              sit justo amet ipsum vero ipsum clita lorem
-            </p>
-            <div class="call-to-action">
-              <button class="read-more">Read More</button>
-              <button class="contact-us">Contact Us</button>
+    <div id="main-container">
+      <nav id="navbar-mobile">
+        <a class="logo">
+          <h1>FitApp</h1>
+        </a>
+        <button id="bars"><i class="fa-solid fa-bars"></i></button>
+        <ul>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#feature">Feature</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="#review">Review</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="login-btn">
+          <button>Start Free Trial</button>
+        </div>
+      </nav>
+      <nav id="navbar">
+        <a class="logo">
+          <h1>FitApp</h1>
+        </a>
+        <ul>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#feature">Feature</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="#review">Review</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="login-btn">
+          <button>Start Free Trial</button>
+        </div>
+      </nav>
+      <main role="main">
+        <!-- go to top button -->
+        <a href="#home" id="go-top-a">
+          <button class="b-tl-br" id="go-top-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </a>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+          <div class="hero-wrapper">
+            <div class="headline-container">
+              <h1>
+                The Revolutionary App That Helps To Control Your Own Fitness
+              </h1>
+              <p>
+                Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum
+                stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam.
+                Sit diam sit justo amet ipsum vero ipsum clita lorem
+              </p>
+              <div class="call-to-action">
+                <button class="read-more">Read More</button>
+                <button class="contact-us">Contact Us</button>
+              </div>
+            </div>
+            <div class="image-slider-container">
+              <img src="./assets/img/screenshot-frame.png" />
             </div>
           </div>
-          <div class="image-slider-container">
-            <img src="./assets/img/screenshot-frame.png"/>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+          <div class="about-wrapper">
+            <div class="about-info-container">
+              <div class="about-info-head">
+                <h2 class="g-t-b">About App</h2>
+                <h1 class="dark">#1 App For Your Fitness</h1>
+              </div>
+              <p class="light-grey">
+                Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
+                labore. Clita erat ipsum et lorem et sit, sed stet no labore
+                lorem sit clita duo justo eirmod magna dolore erat amet
+              </p>
+              <div class="about-states">
+                <div class="about-state">
+                  <i class="fa-solid fa-gears g-tl-br"></i>
+                  <div class="state">
+                    <h1 class="dark">1234</h1>
+                    <span class="g-r-l state-text">Active Install</span>
+                  </div>
+                </div>
+                <div class="about-state">
+                  <i class="fa-solid fa-comments g-br-tr"></i>
+                  <div class="state">
+                    <h1 class="dark">1234</h1>
+                    <span class="g-l-r state-text">Clients Reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="b-tl-br">Read More</button>
+              </div>
+            </div>
+            <div class="about-image-container">
+              <img src="./assets/img/about.png" alt="About" />
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+
+        <!-- Features -->
+        <section id="feature" class="feature-section">
+          <div class="feature-wrapper">
+            <div class="feature-head">
+              <h3 class="g-t-b">App Features</h3>
+              <h1 class="dark">Awesome Features</h1>
+            </div>
+            <div class="feature-card-container">
+              <div class="feature-card">
+                <div class="bg-tl-br">
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <h2>High Resolution</h2>
+                <p>
+                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                  lorem sed diam stet diam sed stet lorem.
+                </p>
+              </div>
+              <div class="feature-card">
+                <div class="bg-tl-br">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h2>Retina Ready</h2>
+                <p>
+                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                  lorem sed diam stet diam sed stet lorem.
+                </p>
+              </div>
+              <div class="feature-card">
+                <div class="bg-tl-br">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <h2>Editable Data</h2>
+                <p>
+                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                  lorem sed diam stet diam sed stet lorem.
+                </p>
+              </div>
+              <div class="feature-card">
+                <div class="bg-tl-br">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h2>Fully Secured</h2>
+                <p>
+                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                  lorem sed diam stet diam sed stet lorem.
+                </p>
+              </div>
+              <div class="feature-card">
+                <div class="bg-tl-br">
+                  <i class="fa-solid fa-cloud"></i>
+                </div>
+                <h2>Cloud Storage</h2>
+                <p>
+                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                  lorem sed diam stet diam sed stet lorem.
+                </p>
+              </div>
+              <div class="feature-card">
+                <div class="bg-tl-br">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h2>Fully Responsive</h2>
+                <p>
+                  Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                  lorem sed diam stet diam sed stet lorem.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+        <section class="download-section">
+          <div class="download-wrapper">
+            <div class="download-image-container">
+              <img src="./assets/img/about.png" alt="About" />
+            </div>
+            <div class="download-info-container">
+              <div class="download-info-head">
+                <h2 class="g-t-b">Download</h2>
+                <h1 class="dark">Download The Latest Version Of Our App</h1>
+              </div>
+              <p class="light-grey">
+                Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
+                labore. Clita erat ipsum et lorem et sit, sed stet no labore
+                lorem sit clita duo justo eirmod magna dolore erat amet
+              </p>
+              <div class="donwlaod-options">
+                <div class="app-store-donwload bg-tl-br">
+                  <i class="fa-brands fa-apple"></i>
+                  <div>
+                    <span>Available On</span>
+                    <strong>App Store</strong>
+                  </div>
+                </div>
+                <div class="play-store-donwload bg-br-tl">
+                  <i class="fa-brands fa-android"></i>
+                  <div>
+                    <span>Available On</span>
+                    <strong>App Store</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Pricing -->
+        <!-- <section id="pricing" class="pricing-section">
+            
+        </section> -->
+      </main>
+    </div>
   </body>
 </html>

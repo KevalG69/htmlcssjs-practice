@@ -1,0 +1,88 @@
+@media (max-width: 575.98px) {
+  #navbar-mobile {
+    display: flex;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  .login-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #navbar-mobile {
+    display: flex;
+  }
+
+  #navbar {
+    display: none;
+  }
+  .login-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #navbar-mobile {
+    display: flex;
+  }
+
+  #navbar {
+    display: none;
+  }
+  .login-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #navbar-mobile {
+    display: none;
+  }
+
+  #navbar {
+    display: flex;
+  }
+  .login-btn {
+    display: block;
+  }
+
+  /* Hero Section */
+  
+
+  /* About Section */
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  #navbar-mobile {
+    display: none;
+  }
+
+  #navbar {
+    display: flex;
+  }
+  .login-btn {
+    display: block;
+  }
+
+  .hero-section
+  {
+    padding: 9.1rem 9rem 0rem 9.1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #navbar-mobile {
+    display: none;
+  }
+
+  #navbar {
+    display: flex;
+  }
+  .login-btn {
+    display: block;
+  }
+}

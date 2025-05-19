@@ -1,20 +1,27 @@
 nav {
-  height: 18vh;
-  background-color: transparent;
   display: flex;
+  height: 20vh;
+  background-color: transparent;
+  flex-wrap: nowrap;
   flex-direction: row;
-  gap: 10rem;
-  justify-content: space-around;
+  /* gap: 10rem; */
+  justify-content: space-between;
   align-items: center;
   position: fixed;
+  padding: 0rem 3rem;
   top: 0;
-  width: 100%;
+  width:100vw;
   z-index: 9999;
   transition: all 0.3s ease-in-out;
 }
 
+/* Navbar Scrolled */
 .navbar-scrolled {
-  height: 11vh;
+  height: 12vh;
+}
+
+#navbar-scrolled ul li a {
+  padding: 1.5rem 1rem;
 }
 
 .logo {
@@ -49,6 +56,11 @@ nav ul li a:hover {
   backdrop-filter: blur(10px);
 }
 
+.login-btn
+{
+  width: 10rem;
+}
+
 .login-btn button {
   width: 10rem;
   height: 2.5rem;
@@ -57,4 +69,72 @@ nav ul li a:hover {
   font-weight: 500;
   font-size: 1rem;
   transition: all 1s ease-in-out;
+}
+
+/* MObile Navbar */
+
+#navbar-mobile {
+height: 12%;
+    background-color: white;
+    flex-direction: row;
+    /* gap: 0rem; */
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+}
+
+#navbar-mobile ul {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navbar-mobile ul li {
+  list-style: none;
+}
+
+#navbar-mobile ul li a {
+  text-decoration: none;
+  padding: 3rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar-mobile ul li a:hover {
+  background-color: #ffffff21;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+#navbar-mobile .logo h1 {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+}
+
+
+#bars
+{
+ padding: 0rem 1rem;
+    font-size: 2rem;
+    border-radius: 0.7rem;
+    color: #838383;
+    background-color: transparent;
+    border: 1px solid #838383;
 }

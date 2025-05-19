@@ -1,0 +1,112 @@
+.feature-section {
+  height: auto;
+  margin-top: 11rem;
+  padding: 0rem 9rem;
+  background-color: white;
+}
+
+.feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 2rem;
+}
+
+.feature-head {
+  text-align: center;
+}
+
+.feature-head h3 {
+  font-weight: 500;
+}
+
+.feature-head h1 {
+  font-size: 2.5rem;
+}
+
+.feature-card-container {
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.feature-card {
+ width: 20.5rem;
+    height: 15.5rem;
+    background-color: var(--bs-light);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-card div {
+        padding: 1rem 1.1rem;
+    width: 4rem;
+    border-radius: 50%;
+    text-align-last: center;
+    font-size: 1.5rem;
+}
+
+.feature-card div i
+{
+
+}
+
+.feature-card h2 {
+      font-size: 1.2rem;
+    font-weight: 500;
+    color:var(--dark);
+}
+
+.feature-card p {
+    color: #919294;
+}
+
+.feature-card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 18px 20px 7px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (max-width: 575.98px) {
+ .feature-card-container {
+        display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1.5rem;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .feature-card-container {
+        display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1.5rem;
+}
+
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+ .feature-card-container {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .feature-card-container {
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+}
+
+@media (min-width: 1400px) {
+  
+}
