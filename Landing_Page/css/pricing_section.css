@@ -1,0 +1,208 @@
+.pricing-section {
+  margin-top: 9rem;
+      height: auto;
+}
+
+.pricing-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-self: center;
+}
+
+.pricing-head {
+  text-align: center;
+}
+
+.pricing-head h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.pricing-head h1 {
+  font-size: 2.5rem;
+}
+
+.plan-duration-switch {
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+}
+
+.plan-duration-switch button {
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+#Monthly-btn {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+  border-right: none;
+}
+
+#Yearly-btn {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transition: all 0.2s ease-in-out;
+  border-left: none;
+}
+
+.btn-border {
+  border: 2px solid var(--secondary);
+}
+
+.pricing-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.pricing-card {
+  background-color: var(--bs-light);
+  border-radius: 0.5rem;
+}
+
+.pricing-card-head {
+  padding: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.pricing-card-head span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.pricing-card-head p {
+}
+
+.pricing-card-body {
+  padding: 1rem 2rem;
+}
+
+.pricing-card-body h1 {
+  font-size: 2.5rem;
+  display: flex;
+}
+
+.dollor {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.duration {
+  font-size: 1rem;
+  align-content: center;
+  margin-top: 1rem;
+}
+
+.pricing-card-body ul {
+  list-style: none;
+}
+
+.pricing-card-body ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 0.1rem;
+}
+
+.pricing-card-body ul li i {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0rem;
+}
+
+.pricing-card-foot {
+  width: 100%;
+  display: flex;
+  padding: 0rem 0rem 1.5rem 1.5rem;
+}
+
+.pricing-card-foot button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+#monthly {
+  display: grid;
+}
+
+#yearly {
+  display: none;
+}
+
+.disappear {
+  animation-name: disappear;
+  animation-timing-function: ease-in-out;
+  animation-duration: 250ms;
+  animation-iteration-count: 1;
+}
+.appear {
+  animation-name: appear;
+  animation-timing-function: ease-in-out;
+  animation-duration: 250ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 575.98px) {
+    .pricing-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .pricing-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .pricing-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .pricing-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}

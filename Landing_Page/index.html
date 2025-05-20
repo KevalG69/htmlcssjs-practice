@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./css/about_section.css" />
     <link rel="stylesheet" href="./css/feature_section.css" />
     <link rel="stylesheet" href="./css/donwload_section.css" />
+    <link rel="stylesheet" href="./css/pricing_section.css" />
+    <link rel="stylesheet" href="./css/review_section.css" />
 
     <script src="index.js" defer></script>
 
@@ -40,7 +42,7 @@
           <li><a class="nav-link" href="#feature">Feature</a></li>
           <li><a class="nav-link" href="#pricing">Pricing</a></li>
           <li><a class="nav-link" href="#review">Review</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
         </ul>
         <div class="login-btn">
           <button>Start Free Trial</button>
@@ -56,7 +58,7 @@
           <li><a class="nav-link" href="#feature">Feature</a></li>
           <li><a class="nav-link" href="#pricing">Pricing</a></li>
           <li><a class="nav-link" href="#review">Review</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
         </ul>
         <div class="login-btn">
           <button>Start Free Trial</button>
@@ -201,8 +203,9 @@
               </div>
             </div>
           </div>
-          
         </section>
+
+        <!-- Download Section -->
         <section class="download-section">
           <div class="download-wrapper">
             <div class="download-image-container">
@@ -237,10 +240,469 @@
             </div>
           </div>
         </section>
+
         <!-- Pricing -->
-        <!-- <section id="pricing" class="pricing-section">
-            
-        </section> -->
+        <section id="pricing" class="pricing-section">
+          <div class="pricing-wrapper">
+            <div class="pricing-head">
+              <h2 class="g-tl-br">Pricing Plan</h2>
+              <h1 class="dark">Choose Your Plan</h1>
+            </div>
+            <div class="plan-duration-switch">
+              <button id="Monthly-btn" class="bg-tl-br">Monthly</button>
+              <button id="Yearly-btn" class="btn-border">Yearly</button>
+            </div>
+            <div class="pricing-card-container" id="monthly">
+              <div class="pricing-card">
+                <div class="pricing-card-head">
+                  <span class="g-tl-br">Starter Plan</span>
+                  <p class="light-grey">Powerful & Awesome Features</p>
+                </div>
+                <div class="pricing-card-body">
+                  <h1>
+                    <span class="dollor">$</span>14.99
+                    <span class="duration">/ Month</span>
+                  </h1>
+                  <ul class="light-grey">
+                    <li>
+                      <span>HTML5 & CSS3</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Bootstrap v5</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Responsive Layout</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Cross-browser Support</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-card-foot">
+                  <button class="bg-tl-br">Get Started</button>
+                </div>
+              </div>
+              <div class="pricing-card">
+                <div class="pricing-card-head">
+                  <span class="g-tl-br">Advance Plan</span>
+                  <p class="light-grey">Powerful & Awesome Features</p>
+                </div>
+                <div class="pricing-card-body">
+                  <h1>
+                    <span class="dollor">$</span>24.99
+                    <span class="duration">/Month</span>
+                  </h1>
+                  <ul class="light-grey">
+                    <li>
+                      <span>HTML5 & CSS3</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Bootstrap v5</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Responsive Layout</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Cross-browser Support</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-card-foot">
+                  <button class="bg-br-tl">Get Started</button>
+                </div>
+              </div>
+              <div class="pricing-card">
+                <div class="pricing-card-head">
+                  <span class="g-tl-br">Premium Plan</span>
+                  <p class="light-grey">Powerful & Awesome Features</p>
+                </div>
+                <div class="pricing-card-body">
+                  <h1>
+                    <span class="dollor">$</span>34.99
+                    <span class="duration">/Month</span>
+                  </h1>
+                  <ul class="light-grey">
+                    <li>
+                      <span>HTML5 & CSS3</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Bootstrap v5</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Responsive Layout</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Cross-browser Support</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-card-foot">
+                  <button class="bg-tl-br">Get Started</button>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-card-container" id="yearly">
+              <div class="pricing-card">
+                <div class="pricing-card-head">
+                  <span class="g-tl-br">Starter Plan</span>
+                  <p class="light-grey">Powerful & Awesome Features</p>
+                </div>
+                <div class="pricing-card-body">
+                  <h1>
+                    <span class="dollor">$</span>114.99
+                    <span class="duration">/ Year</span>
+                  </h1>
+                  <ul class="light-grey">
+                    <li>
+                      <span>HTML5 & CSS3</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Bootstrap v5</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Responsive Layout</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Cross-browser Support</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-card-foot">
+                  <button class="bg-tl-br">Get Started</button>
+                </div>
+              </div>
+              <div class="pricing-card">
+                <div class="pricing-card-head">
+                  <span class="g-tl-br">Advance Plan</span>
+                  <p class="light-grey">Powerful & Awesome Features</p>
+                </div>
+                <div class="pricing-card-body">
+                  <h1>
+                    <span class="dollor">$</span>124.99
+                    <span class="duration">/ Year</span>
+                  </h1>
+                  <ul class="light-grey">
+                    <li>
+                      <span>HTML5 & CSS3</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Bootstrap v5</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Responsive Layout</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Cross-browser Support</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-card-foot">
+                  <button class="bg-br-tl">Get Started</button>
+                </div>
+              </div>
+              <div class="pricing-card">
+                <div class="pricing-card-head">
+                  <span class="g-tl-br">Premium Plan</span>
+                  <p class="light-grey">Powerful & Awesome Features</p>
+                </div>
+                <div class="pricing-card-body">
+                  <h1>
+                    <span class="dollor">$</span>134.99
+                    <span class="duration">/ Year</span>
+                  </h1>
+                  <ul class="light-grey">
+                    <li>
+                      <span>HTML5 & CSS3</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Bootstrap v5</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Responsive Layout</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                    <li>
+                      <span>Cross-browser Support</span>
+                      <span><i class="fa-solid fa-check"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing-card-foot">
+                  <button class="bg-tl-br">Get Started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="review" class="review-section">
+          <div class="review-wrapper">
+            <div class="review-head">
+              <h4 class="g-tl-br">Testimonial</h4>
+              <h1 class="dark">What Say Our Clients!</h1>
+            </div>
+            <div class="review-container-wrapper">
+              <div class="review-card-container">
+                <div class="slider">
+                  <div class="review-card">
+                    <div>
+                      <div class="pfp"></div>
+                      <div class="client-info">
+                        <h1 class="client-name">Client Name</h1>
+                        <h3 class="profession">Profession</h3>
+                        <p class="rating">
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="client-review">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
+                        sit diam amet diam et eos. Clita erat ipsum et lorem et
+                        sit.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-card bg-tl-br">
+                    <div>
+                      <div class="pfp"></div>
+                      <div class="client-info">
+                        <h1 class="client-name">Client Name</h1>
+                        <h3 class="profession">Profession</h3>
+                        <p class="rating">
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="client-review">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
+                        sit diam amet diam et eos. Clita erat ipsum et lorem et
+                        sit.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-card">
+                    <div>
+                      <div class="pfp"></div>
+                      <div class="client-info">
+                        <h1 class="client-name">Client Name</h1>
+                        <h3 class="profession">Profession</h3>
+                        <p class="rating">
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="client-review">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
+                        sit diam amet diam et eos. Clita erat ipsum et lorem et
+                        sit.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-card">
+                    <div>
+                      <div class="pfp"></div>
+                      <div class="client-info">
+                        <h1 class="client-name">Client Name</h1>
+                        <h3 class="profession">Profession</h3>
+                        <p class="rating">
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="client-review">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
+                        sit diam amet diam et eos. Clita erat ipsum et lorem et
+                        sit.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-card">
+                    <div>
+                      <div class="pfp"></div>
+                      <div class="client-info">
+                        <h1 class="client-name">Client Name</h1>
+                        <h3 class="profession">Profession</h3>
+                        <p class="rating">
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="client-review">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
+                        sit diam amet diam et eos. Clita erat ipsum et lorem et
+                        sit.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-card">
+                    <div>
+                      <div class="pfp"></div>
+                      <div class="client-info">
+                        <h1 class="client-name">Client Name</h1>
+                        <h3 class="profession">Profession</h3>
+                        <p class="rating">
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star"
+                            style="color: #ffc107"
+                          ></i>
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="client-review">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
+                        sit diam amet diam et eos. Clita erat ipsum et lorem et
+                        sit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-nav">
+                <button id="prev-btn" class="bg-tl-br"><</button>
+                <button id="next-btn" class="bg-tl-br">></button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </body>

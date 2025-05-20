@@ -1,167 +1,174 @@
 /* text gradient */
-.g-t-b
-{
-    background: linear-gradient(to bottom,var(--primary),var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.g-t-b {
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-.g-r-l
-{
-    background: linear-gradient(to left,var(--primary),var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.g-r-l {
+  background: linear-gradient(to left, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-.g-l-r
-{
-    background: linear-gradient(to right,var(--primary),var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.g-l-r {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-.g-tl-br
-{
-    background: linear-gradient(to bottom right,var(--primary),var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.g-tl-br {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-
-.g-tr-bl
-{
-    background: linear-gradient(to bottom left,var(--primary),var(--secondary));    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.g-tr-bl {
+  background: linear-gradient(to bottom left, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-.g-br-tr
-{
-    background: linear-gradient(to top left,var(--primary),var(--secondary));    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.g-br-tr {
+  background: linear-gradient(to top left, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-.bg-tl-br
-{
-     background: linear-gradient(to bottom right,var(--primary),var(--secondary));   
-    color: var(--light);
+.bg-tl-br {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+  color: var(--light);
+  border: none;
 }
 
-.bg-br-tl
-{
-     background: linear-gradient(to top left,var(--primary),var(--secondary));   
-    color: var(--light);
+.bg-br-tl {
+  background: linear-gradient(to top left, var(--primary), var(--secondary));
+  color: var(--light);
 }
 
-
-
-
-.dark
-{
-    color: var(--dark);
+.dark {
+  color: var(--dark);
 }
 
-.light-grey
-{
-    color: #919294;
+.light-grey {
+  color: #919294;
 }
-
 
 /* Navbar */
-nav
-{
-    
+nav {
 }
 
 /* Scrolled Navbar */
-.navbar-scrolled
-{
-    background-color: white ;
+.navbar-scrolled {
+  background-color: white;
 }
 
-.navbar-scrolled ul li a
-{
+.navbar-scrolled ul li a {
+  color: var(--dark);
+}
+
+nav ul li a {
+  color: var(--light);
+  font-weight: bold;
+}
+
+.logo h1 {
+  color: var(--light);
+}
+
+/* giving font to gradient color */
+.navbar-scrolled .logo h1 {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.login-btn button {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+  color: var(--light);
+}
+
+.login-btn button:hover {
+  background: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--primary)
+  );
+}
+
+/* hero section */
+.headline-container h1 {
+  color: var(--light);
+}
+.headline-container p {
+  color: var(--light);
+}
+
+.read-more {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+  color: var(--light);
+}
+
+.contact-us {
+  background: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--primary)
+  );
+  color: var(--light);
+}
+
+/* About Section */
+.about-info-container button {
+  background: linear-gradient(to top left, var(--secondary), var(--primary));
+  color: var(--light);
+}
+
+/* Pricing */
+.pricing-card-body h1 {
     color: var(--dark);
 }
 
 
-
-nav ul li a
+.pricing-card-body ul li span i
 {
-    color: var(--light);
-    font-weight: bold;
-}
-
-.logo h1
-{
-    color: var(--light);
-}
-
-
-/* giving font to gradient color */
-.navbar-scrolled .logo h1
-{
-    background:linear-gradient(to bottom right,var(--primary),var(--secondary));
-    -webkit-background-clip: text;   
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
-
-
-
-
-
-.login-btn button
-{
-    background: linear-gradient(to bottom right,var(--primary),var(--secondary));
-    color: var(--light);
-}
-
-.login-btn button:hover
-{
-     background: linear-gradient(to bottom right,var(--secondary),var(--primary));
-}
-
-
-/* hero section */
-.headline-container h1
-{
-    color: var(--light);
-}
-.headline-container p 
-{
-    color: var(--light);
-}
-
-.read-more
-{
-     background: linear-gradient(to bottom right,var(--primary),var(--secondary));
-    color: var(--light);
-}
-
-.contact-us
-{
-     background: linear-gradient(to bottom right,var(--secondary),var(--primary));
-    color: var(--light);
-}
-
-
-/* About Section */
-.about-info-container button
-{
- background: linear-gradient(to top left,var(--secondary),var(--primary));
-    color: var(--light);
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
