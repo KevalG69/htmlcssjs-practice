@@ -1,8 +1,11 @@
 console.log("l");
 
 const NAVBAR = document.getElementById("navbar");
+const NAVBAR_MOBILE = document.querySelectorAll("#navbar-mobile ul li a")
+const NAVBAR_MOBILE_UL = document.querySelector("#navbar-mobile ul");
 const GO_TOP = document.getElementById("go-top-a");
 const BARS = document.getElementById("bars");
+
 
 // buttons
 const PLAN_MONTHLY = document.getElementById("Monthly-btn");
@@ -33,7 +36,36 @@ window.addEventListener("scroll", () => {
   }
 });
 
-BARS.addEventListener("click", () => {});
+//on click link in mobile navabar
+NAVBAR_MOBILE.forEach((item)=>{item.addEventListener("click",()=>{
+  console.log("link click")
+   NAVBAR_MOBILE_UL.style.display="none"
+    NAVBAR_MOBILE_UL.style.maxHeight="0vh"
+    nav=false
+})
+})
+
+
+let nav = false;
+BARS.addEventListener("click", () => {
+
+  console.log("click");
+  console.log(NAVBAR_MOBILE_UL)
+  if(nav)
+  {
+    console.log("flex")
+    NAVBAR_MOBILE_UL.style.display="none"
+    NAVBAR_MOBILE_UL.style.maxHeight="0vh"
+    nav=false
+  }
+  else if(!nav)
+  {
+    NAVBAR_MOBILE_UL.style.display="flex"
+    NAVBAR_MOBILE_UL.style.maxHeight="40vh"
+    nav=true
+  }
+
+});
 
 //Plan Selection buttons
 
@@ -172,6 +204,18 @@ REVIEW_CARD_SLIDER.addEventListener("transitionend",()=>{
 })
 
 
+setInterval(()=>{
+  if(transitioned) return;
+  //check if card is transitioning
+  if(transitioned) return;
+
+  //setting transition setup
+  transitioned = true;
+
+  index++;
+
+  updateSlider();
+},2000)
 
 REVIEW_CARD_SLIDER.style.transform = `translateX(-${index*17}%)`;
 highlightCard();

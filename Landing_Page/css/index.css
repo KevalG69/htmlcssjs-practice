@@ -3,26 +3,23 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-   /* outline: 1px solid red !important; */
+  /* outline: 1px solid red !important; */
 }
 
-
-body
-{
-  width: 100vw;
- 
-    
-
-    background-color: red;
+body {
+  max-width: 100vw;
+  background-color: red;
+  display: flex;
+  /* justify-items: end; */
+  justify-self: start;
+  overflow-x: hidden;
 }
 main {
-  
 }
 
-#main-container
-{
+#main-container {
   width: 100vw;
-  background-color:white;
+  background-color: white;
 }
 #go-top-a {
   z-index: 99;
@@ -33,10 +30,8 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
-#go-top-btn:hover
-{
+#go-top-btn:hover {
   cursor: pointer;
-
 }
 #go-top-btn {
   padding: 0.8rem 1.3rem;
@@ -55,4 +50,3 @@ main {
 #go-top-btn i {
   font-size: 0.8rem;
 }
-

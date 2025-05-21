@@ -1,0 +1,108 @@
+.faq-section {
+  padding: 0rem 16rem;
+  margin-top: 7rem;
+  width: 100vw;
+  height: auto;
+}
+
+.faq-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.faq-head {
+}
+
+.faq-head h2 {
+}
+.faq-container {
+}
+
+.faq-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-container ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem 0rem 0rem 1.5rem;
+  box-shadow: -2px 2px 4px 0px #00000066;
+  border-radius: 1rem;
+}
+
+.faq-container ul li input[type="radio"] {
+  display: none;
+}
+
+.faq-container ul li label {
+  font-weight: 600;
+}
+
+.faq-container ul li label::before {
+  content: "+";
+  font-size: 1.2rem;
+  padding: 0rem 0.3rem;
+  font-weight: 600;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.faq-container ul li input[type="radio"]:checked + label + .content {
+  max-height: 4rem;
+  border-top: 1px solid #00000042;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .faq-section {
+    padding: 0rem 2rem;
+  }
+  .faq-container ul li input[type="radio"]:checked + label + .content {
+  max-height: 40rem;
+  border-top: 1px solid #00000042;
+  padding: 0.5rem 1rem;
+}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .faq-section {
+    padding: 0rem 3rem;
+  }
+  .faq-container ul li input[type="radio"]:checked + label + .content {
+  max-height: 40rem;
+  border-top: 1px solid #00000042;
+  padding: 0.5rem 1rem;
+}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .faq-section {
+    padding: 0rem 10rem;
+  }
+  .faq-container ul li input[type="radio"]:checked + label + .content {
+  max-height: 30rem;
+  border-top: 1px solid #00000042;
+  padding: 0.5rem 1rem;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .faq-section {
+    padding: 0rem 12rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}
