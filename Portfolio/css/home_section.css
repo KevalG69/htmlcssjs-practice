@@ -1,0 +1,238 @@
+.home-section {
+  width: 100%;
+  height: auto;
+  margin-top: 7rem;
+  padding: 5rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+.home-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+}
+
+.home-info-container {
+  color: var(--text-color);
+}
+
+.home-info-container h5 {
+  font-size: 1rem;
+}
+
+.home-info-container h4 {
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+.home-info-container h1 {
+  font-size: 4.5rem;
+  margin-top: -1rem;
+}
+
+.home-info-container h2 {
+  font-size: 4.5rem;
+  margin-top: -2rem;
+  margin-left: 10rem;
+}
+.home-info-container p {
+}
+
+.hire-me-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 2.5rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.home-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding-left: 6rem;
+}
+
+.image-container {
+}
+
+.image-container img {
+  width: 29vw;
+  height: 60vh;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-media i {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+/* Media Quary */
+
+@media (max-width: 575.98px) {
+  .home-section {
+   
+    margin-top: 4rem;
+
+    padding: 4rem 3rem 0rem 3rem;
+  }
+  .home-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+            justify-content: center;
+    gap: 3rem;
+  }
+  .home-info-container h5 {
+    font-size: 0.7rem;
+  }
+  .home-info-container h4 {
+    font-size: 1rem;
+  }
+  .home-info-container h1 {
+    font-size: 2rem;
+    margin-top: 0rem;
+  }
+  .home-info-container h2 {
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-left: 7rem;
+  }
+  .home-info-container {
+    font-size: 0.8rem;
+  }
+  .home-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding-left: 0rem;
+  }
+
+  .image-container img {
+    width: 70vw;
+    height: 45vh;
+
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .home-section {
+   
+    
+
+    padding: 4rem 3rem 0rem 3rem;
+  }
+  .home-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+            justify-content: center;
+    gap: 3rem;
+  }
+  .home-info-container h5 {
+    font-size: 0.8rem;
+  }
+  .home-info-container h4 {
+    font-size: 1.3rem;
+  }
+  .home-info-container h1 {
+    font-size: 3rem;
+    margin-top: -1rem;
+  }
+  .home-info-container h2 {
+    font-size: 3rem;
+    margin-top: -2rem;
+    margin-left: 10rem;
+  }
+  .home-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding-left: 0rem;
+  }
+
+  .image-container img {
+     width: 50vw;
+    height: 65vh;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home-section {
+   
+    margin-top: 7rem;
+
+    padding: 4rem 3rem 0rem 3rem;
+  }
+  .home-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+            justify-content: center;
+    gap: 3rem;
+  }
+  .home-info-container h5 {
+    font-size: 0.8rem;
+  }
+  .home-info-container h4 {
+    font-size: 1.3rem;
+  }
+  .home-info-container h1 {
+    font-size: 3rem;
+    margin-top: -1rem;
+  }
+  .home-info-container h2 {
+    font-size: 3rem;
+    margin-top: -2rem;
+    margin-left: 10rem;
+  }
+  .home-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding-left: 0rem;
+
+  }
+
+  .image-container img {
+    width: 50vw;
+    height: 65vh;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* .home-section {
+    width: 100%;
+    height: auto;
+    margin-top: 7rem;
+    padding: 5rem 7rem 0rem 7rem;
+  } */
+
+  .image-container img {
+    width: 29vw;
+    height: 51vh;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}
