@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link rel="icon" type="image" href="assets/img/icon.png"/>
+    <link rel="icon" type="image" href="assets/img/icon.png" />
     <!-- Fonts -->
     <link
       rel="stylesheet"
@@ -15,27 +15,267 @@
     />
 
     <!-- css -->
-     <link rel="stylesheet" href="css/globalVar.css"/>
-     <link rel="stylesheet" href="css/colors.css"/>
-     
+    <link rel="stylesheet" href="css/globalVar.css" />
+    <link rel="stylesheet" href="css/colors.css" />
 
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/home_section.css" />
+    <link rel="stylesheet" href="css/about_section.css" />
+    <link rel="stylesheet" href="css/services_section.css" />
+    <link rel="stylesheet" href="css/projects_section.css" />
+
+
+    <script src="./index.js" defer></script>
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body class="dark-theme">
+    <!-- Header -->
     <header>
-        <nav>
+      <!-- Mobile Navbar -->
+      <nav class="navbar-mobile">
+        <div class="logo">
+          <h1>KEVALUIUX</h1>
+        </div>
+        <div>
+          <button class="bars">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
 
-        </nav>
+          <li><a href="#contact">Contact</a></li>
+          <div class="download">
+            <button>Download CV</button>
+          </div>
+        </ul>
+      </nav>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo">
+          <h1>KEVALUIUX</h1>
+        </div>
+        <div class="navbar-inner">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="download">
+            <button>Download CV</button>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
-        <section id="home" class="home-section"></section>
-        <section id="about-me" class="about-section"></section>
-        <section id="services" class="services"></section>
-        <section id="projects" class="projects-section"></section>
-        <section id="work-experience" class="work-section"></section>
-        <section id="testimonials" class="testimonials-section"></section>
-        <section id="contact" class="contact-section"></section>
 
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="home-section">
+        <div class="home-wrapper">
+          <div class="home-info-container">
+            <h5>Hi I am</h5>
+            <h4>Fawzi Sayed</h4>
+            <h1>UI & UX</h1>
+            <h2>Designer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              expedita sint, recusandae qui dignissimos amet accusantium fugiat
+              omnis ad eligendi.
+            </p>
+            <button class="hire-me-btn">Hire Me</button>
+          </div>
+          <div class="home-image-container">
+            <div class="image-container">
+              <img src="./assets/img/profile.png" alt="Photo" />
+            </div>
+            <div class="social-media">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section id="about-me" class="about-section">
+        <div class="about-wrapper">
+          <div class="about-image-container">
+            <img src="./assets/img/profile.png" alt="profile" />
+          </div>
+          <div class="about-info-container">
+            <h1>About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+              adipisci provident, voluptas culpa possimus illo. Lorem ipsum
+              dolor sit dolor sit amet consectetur.
+            </p>
+
+            <div class="skill-container">
+              <div class="skills">
+                <h3>UX</h3>
+                <div class="progress-bar">
+                  <div class="progress-filler-wrapper">
+                    <div style="width: 90%" class="progress-bar-filler"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skills">
+                <h3>Website Design</h3>
+                <div class="progress-bar">
+                  <div class="progress-filler-wrapper">
+                    <div style="width: 85%" class="progress-bar-filler"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skills">
+                <h3>App Design</h3>
+                <div class="progress-bar">
+                  <div class="progress-filler-wrapper">
+                    <div style="width: 95%" class="progress-bar-filler"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skills">
+                <h3>Graphic Design</h3>
+                <div class="progress-bar">
+                  <div class="progress-filler-wrapper">
+                    <div style="width: 88%" class="progress-bar-filler"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services -->
+      <section id="services" class="services-section">
+        <div class="services-wrapper">
+          <div class="services-head">
+            <h1>Services</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              temporibus adipisicing elit. Mollitia, aut?.
+            </p>
+          </div>
+          <div class="services-card-container">
+            <div class="services-card">
+              <img src="./assets/img/uiux.png" alt="uiux" />
+              <h2>UI/UX</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                natus neque!
+              </p>
+            </div>
+            <div class="services-card">
+              <img src="./assets/img/web-design.png" alt="uiux" />
+
+              <h2>Web Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                natus neque!
+              </p>
+            </div>
+            <div class="services-card">
+              <img src="./assets/img/app-design.png" alt="uiux" />
+
+              <h2>App Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                natus neque!
+              </p>
+            </div>
+            <div class="services-card">
+              <img src="./assets/img/graphic.png" alt="uiux" />
+
+              <h2>Graphic Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                natus neque!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects  -->
+      <section id="projects" class="projects-section">
+        <div class="projects-wrapper">
+          <div class="projects-head">
+            <h1>My Projects</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              temporibus adipisicing elit. Mollitia, aut?.
+            </p>
+          </div>
+          <div class="projects-options">
+            <button class="all-btn">All</button>
+            <button class="ui-btn">UI/UX</button>
+            <button class="web-btn">Web Design</button>
+            <button class="app-btn">App Design</button>
+            <button class="graphic-btn">Graphic Design</button>
+          </div>
+          <div class="projects-card-container">
+            <div class="projects-card web">
+              <img src="./assets/img/aircalling.webp" alt="" />
+              <div class="projects-card-foot">
+                <h5>Web Design</h5>
+                <h4>AirCalling Landing Page Design</h4>
+              </div>
+            </div>
+            <div class="projects-card web">
+              <img src="./assets/img/business.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>Web Design</h5>
+                <h4>Business Landing Page Design</h4>
+              </div>
+            </div>
+            <div class="projects-card web">
+              <img src="./assets/img/ecom.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>Web Design</h5>
+                <h4>Ecom Web Page Design</h4>
+              </div>
+            </div>
+
+
+            <div class="projects-card uiux">
+              <img src="./assets/img/ecom.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>Web Design</h5>
+                <h4>Ecom Web Page Design</h4>
+              </div>
+            </div>
+            <div class="projects-card uiux">
+              <img src="./assets/img/ecom.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>Web Design</h5>
+                <h4>Ecom Web Page Design</h4>
+              </div>
+            </div>
+            <div class="projects-card uiux">
+              <img src="./assets/img/ecom.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>Web Design</h5>
+                <h4>Ecom Web Page Design</h4>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="experience-section"></section>
+      <section id="contact" class="contact-section"></section>
     </main>
-</body>
+  </body>
 </html>
