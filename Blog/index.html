@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="index.js" defer></script>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog</title>
+  </head>
+  <body>
+
+      <!-- Mobile Navbar -->
+      <nav class="navbar-mobile">
+        <div>
+          <button id="bars">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <ul>
+          <li><a href="#ArrowFunctions">Arrow Functions</a></li>
+          <li><a href="#DefaultParameters">Default Parameters</a></li>
+          <li><a href="#RestParameters">Rest Parameters</a></li>
+          <li><a href="#SpreadSyntax">Spread Syntax</a></li>
+          <li><a href="#FunctionConstructors">Function Constructors</a></li>
+         
+        </ul>
+      </nav>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="navbar-inner">
+          <ul>
+            <li><a href="#ArrowFunctions">Arrow Functions</a></li>
+            <li><a href="#DefaultParameters">Default Parameters</a></li>
+            <li><a href="#RestParameters">Rest Parameters</a></li>
+            <li><a href="#SpreadSyntax">Spread Syntax</a></li>
+            <li><a href="#FunctionConstructors">Function Constructors</a></li>
+          </ul>
+        
+      </nav>
+   
+
+    <main>
+      <header>
+        <img src="./img.webp" />
+      </header>
+      <section>
+        <div class="author-date">
+          <div class="author-card">
+            <img src="author.jpg" alt="author" />
+            <div class="date">
+              <h4>Pratik Tamhane</h4>
+              <p>Posted on Aug 29, 2024 • Edited on Aug 30, 2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <article class="blog-post">
+        <p>
+            <h1><strong>The Evolution of Functions in JavaScript</strong></h1>
+            JavaScript has evolved significantly, introducing new syntax and features that enhance how we define and work with functions. Let’s explore some of these modern approaches.
+            <div id="ArrowFunctions">
+
+           
+            <h3>1. Arrow Functions</h3>
+            Arrow functions, introduced in ES6, offer a more concise syntax compared to traditional function expressions. They also handle the this keyword differently, which can be advantageous in certain scenarios.
+
+            <pre>
+                <code class="language-js">
+        const add = (a, b) => a + b;
+                </code>
+            </pre>
+            <pre>
+                <code class="language-js">
+    const multiply = (x, y) => {
+        return x * y;
+    };
+                </code>
+                </pre>
+            <pre>
+                <code class="language-js">
+
+    console.log(multiply(4, 5)); // Output: 20
+                </code>
+            </pre>
+
+            <h4>
+                Key Points:
+
+            </h4>
+            <blockquote>
+
+                1)Shorter syntax.
+                2)Implicit return for single expressions.
+                3)Lexical this binding.
+            </blockquote>
+ </div>
+ <div id="DefaultParameters">
+            <h3>
+
+                2. Default Parameters
+            </h3>
+            Default parameters allow you to specify default values for function parameters if no argument is provided or if undefined is passed.
+
+            <pre>
+                <code class="language-js">
+    function greet(name = 'Guest') {
+        console.log(`Hello, ${name}!`);
+    }
+                </code>
+            </pre>
+            <pre>
+                <code class="language-js">
+    greet(); // Output: Hello, Guest!
+    greet('Alice'); // Output: Hello, Alice!
+                </code>
+            </pre>
+            <h4>
+                
+                Key Points:
+            </h4>
+
+            <blockquote>
+
+                1)Default values prevent undefined errors.
+                2)Simplifies handling optional parameters.
+                
+            </blockquote>
+</div>
+<div id="RestParameters">
+            <h3>
+                3. Rest Parameters
+            </h3>
+            Rest parameters provide a way to handle functions with a variable number of arguments. They allow you to collect all remaining arguments into a single array.
+
+            <pre>
+                <code class="language-js">
+    function sum(...numbers) {
+        return numbers.reduce((acc, num) => acc + num, 0);
+     }
+                    
+    console.log(sum(1, 2, 3, 4)); // Output: 10
+                    
+                </code>
+            </pre>
+            <h4>
+                Key Points:
+
+            </h4>
+
+            <blockquote>
+
+                1) Collects all arguments into an array.
+                2) Useful for functions with dynamic argument lists.
+            </blockquote>
+</div>
+<div id="SpreadSyntax">
+
+
+            <h3>
+
+                4. Spread Syntax
+            </h3>
+            While not exclusive to functions, the spread syntax can be used to expand arrays into individual elements, making it useful for passing arguments.
+
+            <pre>
+                <code class="language-js">
+    function greet(name, age, city) {
+        console.log(`Name: ${name}, Age: ${age}, City: ${city}`);
+    }
+                    
+        const person = ['John', 30, 'New York'];
+    greet(...person);
+    const numbers = [1, 2, 3];
+    const moreNumbers = [4, 5, ...numbers];
+    console.log(moreNumbers); // Output: [4, 5, 1, 2, 3]
+                </code>
+            </pre>
+            <h4>
+
+                Key Points:
+            </h4>
+            <blockquote>
+                
+                1)Expands arrays into individual elements.
+                2)Useful for combining arrays or passing multiple arguments.
+            </blockquote>
+</div>
+<div id="FunctionConstructors">
+
+
+            <h3>
+
+                5. Function Constructors
+            </h3>
+            Although not new, understanding function constructors can help you create functions dynamically.
+
+            <pre>
+                <code class="language-js">
+
+    const createFunction = new Function('a', 'b', 'return a + b');
+    console.log(createFunction(5, 3)); // Output: 8
+                </code>
+            </pre>
+            <h4>
+                Key Points:
+
+            </h4>
+            <blockquote>
+
+                1)Creates functions from strings.
+                2)Less common but useful for dynamic function generation.
+            </blockquote>
+            </div>
+            <h3>
+
+                Best Practices for Modern Functions
+            </h3>
+            Use Arrow Functions for Short Functions: They provide a cleaner syntax and handle this differently, which can be useful in callbacks and methods.
+
+            Leverage Default Parameters: They help avoid errors from missing arguments and simplify function logic.
+
+            Employ Rest Parameters for Flexibility: Useful for handling variable numbers of arguments and reducing function complexity.
+
+            Utilize Spread Syntax for Clarity: It makes working with arrays and arguments more intuitive and concise.
+
+            Avoid Function Constructors: Unless absolutely necessary, prefer defining functions using standard syntax for clarity and security.
+
+            <h3>
+
+                Conclusion
+            </h3>
+            Modern JavaScript provides a range of tools for creating functions that make your code more expressive, concise, and easier to maintain. By leveraging arrow functions, default parameters, rest parameters, and spread syntax, you can write cleaner and more efficient code.
+
+            Feel free to experiment with these features and see how they fit into your coding style. If you have any questions or additional tips on JavaScript functions, leave a comment below!
+
+            Happy coding!
+        </p>
+      </article>
+      <div class="related-posts">
+        <div class="post">
+            <img src="i1.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis.
+            </p>
+        </div>
+        <div class="post">
+            <img src="i1.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis.
+            </p>
+        </div>
+        <div class="post">
+            <img src="i1.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis.
+            </p>
+        </div>
+        <div class="post">
+            <img src="i1.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis.
+            </p>
+        </div>
+        <div class="post">
+            <img src="i1.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis.
+            </p>
+        </div>
+        <div class="post">
+            <img src="i1.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perferendis.
+            </p>
+        </div>
+      </div>
+      <div class="social-media">
+              <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+
+        <form>
+            <div class="field">
+                <input type="text" name="comment" id="comment"
+                    placeholder="comment"
+                />
+                <button class="send">Send</button>
+            </div>
+        </form>
+    </main>
+  </body>
+</html>
