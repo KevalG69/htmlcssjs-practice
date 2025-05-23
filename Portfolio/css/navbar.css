@@ -14,10 +14,9 @@
   background-color: var(--primary);
   transition: all 0.4s ease-in-out;
 }
-.navbar-scrolled
-{
+.navbar-scrolled {
   box-shadow: 0px 4px 4px 0px #00000017;
-
+  height: 10vh;
 }
 .navbar-inner {
   display: flex;
@@ -37,7 +36,7 @@
 
 .navbar ul li a {
   text-decoration: none;
-  color: #c6c6c6;
+  color: var(--light);
   font-size: 1rem;
   padding: 1rem;
 }
@@ -56,7 +55,7 @@
 .download button {
   padding: 0.7rem 1.5rem;
   background-color: var(--secondary);
-  color: var(--text-color);
+  color: white;
   border: none;
   border-radius: 0.2rem;
   font-size: 1rem;
@@ -76,35 +75,36 @@
 }
 
 /* Mobile navbar */
-.bars {
-     padding: 0.5rem 0.8rem;
-    font-size: 1.5rem;
-    border-radius: 0.5rem;
-    background-color: #fd6f00;
-    border: none;
-    color: var(--text-color);
+#bars {
+  padding: 0.5rem 0.8rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #fd6f00;
+  border: none;
+  color: white;
 }
 
-.bars i {
+#bars i {
 }
 
 .navbar-mobile {
- display: none;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    height: 12vh;
-    /* gap: 3rem; */
-    padding: 0rem 1rem;
-    /* justify-self: right; */
-    align-items: center;
-    justify-content: space-between;
-    /* justify-content: center; */
-    background-color: var(--primary);
-    box-shadow: 0px 4px 4px 0px #00000017;
+  display: none;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  height: 12vh;
+  /* gap: 3rem; */
+  padding: 0rem 1rem;
+  /* justify-self: right; */
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: center; */
+  background-color: var(--primary);
+  box-shadow: 0px 4px 4px 0px #00000017;
+   
 }
 
 .navbar-mobile .navbar-inner {
@@ -117,7 +117,18 @@
 .navbar-mobile ul {
   list-style: none;
   display: none;
-  flex-direction: row;
+  position: absolute;
+  flex-direction: column;
+  top: 5rem;
+  right: 0rem;
+  gap: 2rem;
+  text-align: end;
+  padding: 1rem 1rem;
+  background-color: var(--primary);
+  width: 20;
+  border-top: 1px solid white;
+  border-bottom-left-radius: 0.5rem;
+   box-shadow: 0px 4px 4px 0px #00000017;
 }
 
 .navbar-mobile ul li {
@@ -125,9 +136,9 @@
 
 .navbar-mobile ul li a {
   text-decoration: none;
-  color: #c6c6c6;
-  font-size: 1rem;
-  padding: 1rem;
+  color: var(--light);
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
 }
 
 .navbar-mobile ul li a:hover {
@@ -144,7 +155,7 @@
 .navbar-mobile .download button {
   padding: 0.7rem 1.5rem;
   background-color: var(--secondary);
-  color: var(--text-color);
+  color: white;
   border: none;
   border-radius: 0.2rem;
   font-size: 1rem;
@@ -164,6 +175,14 @@
 }
 .navbar-mobile {
   display: none;
+}
+
+@keyframes show {
+  0% {
+    height: 0vh;
+  }
+  50% {
+  }
 }
 
 /* Media Quary */
@@ -216,7 +235,6 @@
   .navbar-mobile {
     display: none;
   }
-  
 }
 
 @media (min-width: 1400px) {

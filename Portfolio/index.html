@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="css/about_section.css" />
     <link rel="stylesheet" href="css/services_section.css" />
     <link rel="stylesheet" href="css/projects_section.css" />
-
+    <link rel="stylesheet" href="css/contact_section.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
     <script src="./index.js" defer></script>
     <title>Portfolio</title>
@@ -38,17 +39,15 @@
           <h1>KEVALUIUX</h1>
         </div>
         <div>
-          <button class="bars">
+          <button id="bars">
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#about-me">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-
           <li><a href="#contact">Contact</a></li>
           <div class="download">
             <button>Download CV</button>
@@ -64,10 +63,9 @@
         <div class="navbar-inner">
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#about-me">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
 
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -79,6 +77,12 @@
     </header>
 
     <main>
+      <!-- Theme Tonggle -->
+      <button id="theme-toggle">
+        <i class="fa-solid fa-moon"></i>
+        
+      </button>
+
       <!-- Home Section -->
       <section id="home" class="home-section">
         <div class="home-wrapper">
@@ -218,64 +222,152 @@
             </p>
           </div>
           <div class="projects-options">
-            <button class="all-btn">All</button>
-            <button class="ui-btn">UI/UX</button>
-            <button class="web-btn">Web Design</button>
-            <button class="app-btn">App Design</button>
-            <button class="graphic-btn">Graphic Design</button>
+            <button id="all-btn">All</button>
+            <button id="ui-btn">UI/UX</button>
+            <button id="web-btn" class="active">Web Design</button>
+            <button id="app-btn">App Design</button>
+            <button id="graphic-btn">Graphic Design</button>
           </div>
-          <div class="projects-card-container">
-            <div class="projects-card web">
+
+          <!-- Web Design -->
+          <div class="projects-card-container web">
+            <div class="projects-card">
               <img src="./assets/img/aircalling.webp" alt="" />
               <div class="projects-card-foot">
                 <h5>Web Design</h5>
                 <h4>AirCalling Landing Page Design</h4>
               </div>
             </div>
-            <div class="projects-card web">
+            <div class="projects-card">
               <img src="./assets/img/business.jpg" alt="" />
               <div class="projects-card-foot">
                 <h5>Web Design</h5>
                 <h4>Business Landing Page Design</h4>
               </div>
             </div>
-            <div class="projects-card web">
+            <div class="projects-card">
               <img src="./assets/img/ecom.jpg" alt="" />
               <div class="projects-card-foot">
                 <h5>Web Design</h5>
                 <h4>Ecom Web Page Design</h4>
               </div>
             </div>
+          </div>
 
-
-            <div class="projects-card uiux">
+          <!-- UI/UX -->
+          <div class="projects-card-container uiux">
+            <div class="projects-card">
               <img src="./assets/img/ecom.jpg" alt="" />
               <div class="projects-card-foot">
-                <h5>Web Design</h5>
+                <h5>UI/UX</h5>
                 <h4>Ecom Web Page Design</h4>
               </div>
             </div>
-            <div class="projects-card uiux">
+            <div class="projects-card">
               <img src="./assets/img/ecom.jpg" alt="" />
               <div class="projects-card-foot">
-                <h5>Web Design</h5>
+                <h5>UI/UX</h5>
                 <h4>Ecom Web Page Design</h4>
               </div>
             </div>
-            <div class="projects-card uiux">
+            <div class="projects-card">
               <img src="./assets/img/ecom.jpg" alt="" />
               <div class="projects-card-foot">
-                <h5>Web Design</h5>
+                <h5>UI/UX</h5>
                 <h4>Ecom Web Page Design</h4>
               </div>
             </div>
-
-
+          </div>
+          <!-- App -->
+          <div class="projects-card-container app">
+            <div class="projects-card">
+              <img src="./assets/img/ecom.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>App Design</h5>
+                <h4>Ecom Web Page Design</h4>
+              </div>
+            </div>
+            <div class="projects-card">
+              <img src="./assets/img/ecom.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>App Design</h5>
+                <h4>Ecom Web Page Design</h4>
+              </div>
+            </div>
+            <div class="projects-card">
+              <img src="./assets/img/ecom.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>App Design</h5>
+                <h4>Ecom Web Page Design</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Graphic -->
+          <div class="projects-card-container graphic">
+            <div class="projects-card">
+              <img src="./assets/img/ecom.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>Graphic Design</h5>
+                <h4>Ecom Web Page Design</h4>
+              </div>
+            </div>
+            <div class="projects-card">
+              <img src="./assets/img/ecom.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>Graphic Design</h5>
+                <h4>Ecom Web Page Design</h4>
+              </div>
+            </div>
+            <div class="projects-card">
+              <img src="./assets/img/ecom.jpg" alt="" />
+              <div class="projects-card-foot">
+                <h5>Graphic Design</h5>
+                <h4>Ecom Web Page Design</h4>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section id="experience" class="experience-section"></section>
-      <section id="contact" class="contact-section"></section>
+      <section id="contact" class="contact-section">
+        <div class="contact-wrapper">
+          <div class="contact-head">
+            <h1>Lets Design Together</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima,
+              error fugit debitis consequuntur temporibus ad.
+            </p>
+          </div>
+          <div class="form">
+            <input type="email" placeholder="Enter Your Email" />
+            <button>Contact Me</button>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-wrapper">
+          <h1>KEVALUIUX</h1>
+          <div class="foot-link">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-me">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+
+        </div>
+        <div class="foot">
+          <p>2025 <span style="color: var(--secondary);"> KEVALUIUX</span> All Rights Reserved , inc.</p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

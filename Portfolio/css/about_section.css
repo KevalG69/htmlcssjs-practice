@@ -19,6 +19,7 @@
   height: 70vh;
   background-color: white;
   border-radius: 50%;
+  border: 4px solid black;
 }
 
 .about-image-container h1 {
@@ -41,7 +42,7 @@
 }
 
 .about-info-container p {
-  color: #c6c6c6;
+  color: var(--light);
 }
 
 .skill-container {
@@ -65,7 +66,7 @@
   height: 0.5rem;
 
   border-radius: 1rem;
-  background-color: white;
+  background-color: var(--bg);
 }
 
 .progress-bar-filler {
@@ -131,7 +132,7 @@
   .about-info-container h1 {
     font-size: 2rem;
     font-weight: 600;
-}
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
