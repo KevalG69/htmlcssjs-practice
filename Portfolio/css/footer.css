@@ -20,16 +20,13 @@ footer {
 .footer-wrapper h1 {
   color: var(--light-dark);
 }
-.foot-link {
-}
+
 
 .foot-link ul {
   display: flex;
   list-style: none;
 }
 
-.foot-link ul li {
-}
 
 .foot-link ul li a {
   text-decoration: none;
