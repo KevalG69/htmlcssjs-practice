@@ -1,0 +1,19 @@
+<script>
+  let Str = prompt("Enter String To Count Vowels");
+
+  let count = 0;
+
+  for (let i = 0; i < Str.length; i++) {
+    let str = Str.charAt(i);
+    if (
+      str.toLowerCase() == "a" ||
+      str.toLowerCase() == "e" ||
+      str.toLowerCase() == "i" ||
+      str.toLowerCase() == "o" ||
+      str.toLowerCase() == "u"
+    ) {
+      count++;
+    }
+  }
+  alert(`Number of Vowels is ${count}`);
+</script>

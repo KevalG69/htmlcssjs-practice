@@ -1,0 +1,16 @@
+<script>
+     let Str = prompt("Enter String To Reverse");
+
+     let StrArry = Str.split("");
+     console.log(StrArry);
+
+     let newStr="";
+     console.log(StrArry.length)
+     for(let i= StrArry.length-1;i>=0;i--)
+     {
+        console.log(StrArry[i])
+        newStr = newStr.concat("",StrArry[i]);
+     }
+     console.log(newStr)
+     alert(`New String = ${newStr}`)
+</script>

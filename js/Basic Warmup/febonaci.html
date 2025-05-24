@@ -1,0 +1,21 @@
+<script>
+  let num = parseInt(prompt("Enter Number"));
+  // 0, 1, 1, 2, 3, 5, 8, 13, 21, 3
+  let firstNum = 0;
+  let secondNum = 1;
+
+  let t = 2,
+    ans = "0,1";
+  //
+  do 
+  {
+    t = firstNum + secondNum;
+    ans = ans.concat(",", t.toString());
+    firstNum = secondNum;
+    secondNum = t;
+    console.log(num,t)
+  }while (t < num)
+
+  console.log(ans);
+  alert(`${ans}`);
+</script>
