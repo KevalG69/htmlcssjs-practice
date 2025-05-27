@@ -1,0 +1,43 @@
+<script>
+  let arry = ["a", "b", "a", "d", "e", "f", "a", "b"];
+    console.log(arry)
+  let indexToRemove = []; //store index of array element to remove them
+
+  const findDup = () => {
+    //interate throght loop and select one element at a time
+    //compare with all elements next to it
+    //if it finds similar value to it then store it to remove element list
+    for (let i = 0; i < arry.length - 1; i++) {
+      //break loop and continue again when it try to check element which is in removing element list
+      if (indexToRemove.includes(i)) continue;
+
+      //iterate the loop start after selected element of array
+      for (let j = i + 1; j < arry.length; j++) {
+        //if selected element value comes again in array
+        //store that elements index value to indexToRemove array
+
+        if (arry[i] === arry[j]) {
+          indexToRemove.push(j); //push element value to indexToRemove to remove that element later
+        }
+      }
+    }
+  };
+
+  //remove elements
+  const remDup = () => {
+    //if index of item is in the list of indextToRemove array then filter it
+    arry = arry.filter((item,index)=>
+        // console.log(index,item)
+        !indexToRemove.includes(index)
+    )
+    
+  };
+
+  //first find duplicate
+  findDup();
+  //remove element on index from indexToRemove array
+  remDup();
+
+  //print duplicate element index
+  console.log(arry, "indexToRemove", indexToRemove);
+</script>

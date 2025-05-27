@@ -1,0 +1,31 @@
+<script>
+  let arry = ["a", "b", "a", "d", "e", "f", "a", "b"];
+  console.log(arry);
+
+  let frequency = {};
+  //iterate through array
+
+  let indexOfDupElements = [];
+  for (let i = 0; i < arry.length - 1; i++) {
+
+    //if duplicate elements come in selected elements
+    if (indexOfDupElements.includes(i)) continue;
+
+    //select on element then check elements next to it to get frequency of elements
+    let count = 1;//default value is 1 cause element count it self
+
+    //now check elements comes next to it
+    for (let j = i + 1; j < arry.length; j++) {
+      //if same element comes again
+      if (arry[i] === arry[j]) {
+        //push elements that duplicate of selected elements 
+        indexOfDupElements.push(j);
+        //count element
+        count++;
+      }
+    }
+    //now push this element and number of times it comes to count
+    frequency[arry[i]] = count;
+  }
+  console.log(frequency)
+</script>

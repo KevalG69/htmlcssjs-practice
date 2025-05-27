@@ -1,0 +1,16 @@
+<script>
+    let arry = [1,2,3,4,5,6,7,8];
+    console.log(arry);
+
+
+    //first slice array elements
+    let slicedArray1 = arry.slice(0,3);
+
+    //second elements
+    let slicedArray2 = arry.slice(3,arry.length);
+
+    //contact to array elements
+    let rotatedArray = slicedArray2.concat(slicedArray1);
+
+    console.log("rotated Array",rotatedArray)
+</script>

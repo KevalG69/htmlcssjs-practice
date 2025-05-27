@@ -1,0 +1,18 @@
+<script>
+  let arry = [1, 2, 3, 4, 7, 8, 9, 10];
+
+  let missingElement = [];
+  //finding missing number from 1 to 10
+  for (let i = 0; i < arry.length; i++) {
+    //if current array element's value is and its next elements value have only 1 differenc
+    //then no elements is missing between them
+    if (arry[i + 1] - arry[i] != 1 && arry[i + 1] - arry[1] != -1) {
+      //iterate loop number of time that number of elements is missing
+      for (let j = 1; j <= Math.abs(arry[i] - arry[i + 1])-1; j++) {
+          //push that missing element in array
+          missingElement.push(arry[i] + j);
+      }
+    }
+  }
+  console.log(`missing Elements ${missingElement}`)
+</script>

@@ -1,0 +1,24 @@
+<script>
+  let arry = [2,31,53,12,19,10,5,6,3];
+  console.log(arry)
+  // for (let i = 0; i < 10; i++) {
+  //   arry.push(parseInt(prompt("Enter Number")));
+  // }
+
+  let minNum=arry[0];
+  //minimum Number
+  for (let i = 0; i < arry.length - 1; i++) {
+    if (minNum > arry[i]) {
+        minNum = arry[i];
+    }
+  }
+  let maxNum=arry[0];
+   //maximum Number
+  for (let i = 0; i < arry.length - 1; i++) {
+    if (maxNum < arry[i]) {
+        maxNum = arry[i];
+    }
+  }
+  console.log(arry,"min",minNum);
+  alert(`Min = ${minNum}, Max = ${maxNum}`)
+</script>

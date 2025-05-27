@@ -1,0 +1,29 @@
+<script>
+  let arry = [12, 46, 500, 11, 8, 6, 9, 160, 20];
+  console.log(arry);
+
+  let maxNum = arry[0];
+  let secondMaxNum = arry[0];
+  let pre = arry[0];
+  //iterate throug array
+  for (let i = 0; i < arry.length; i++) {
+    //find largest number
+    if (maxNum < arry[i]) {
+      //store previouse maximu number
+      pre = maxNum;
+      maxNum = arry[i];
+    }
+    //if current array element greater than elemenent stored in secondMaxNum
+    //but lessthan maxNum
+    if (secondMaxNum < arry[i] && arry[i] < maxNum) {
+      //if previous maximum number is greater than current maximum element
+      if (pre > arry[i]) {
+        secondMaxNum = pre;
+      } //if it is not greater than previous maximum than current element is second largest
+      else {
+        secondMaxNum = arry[i];
+      }
+    }
+  }
+  console.log(`max Number = ${maxNum},second Number ${secondMaxNum}`);
+</script>
