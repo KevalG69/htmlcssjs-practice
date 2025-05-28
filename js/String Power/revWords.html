@@ -1,0 +1,15 @@
+<script>
+    let sentance = "the cat hates water";
+
+    const revWords = (sentance)=>{
+        //first make this sentace an array
+        sentance = sentance.split(" ");
+        //reverse the array
+        sentance.reverse();
+
+        //convet array to string and return 
+        return sentance.join(" ");
+    }
+
+    console.log(revWords(sentance));
+</script>

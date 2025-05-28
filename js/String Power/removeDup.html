@@ -1,0 +1,35 @@
+<script>
+  let sentace = "the cat hates water";
+    console.log(sentace)
+    console.log(remDuplicateChar(sentace));
+
+  function remDuplicateChar(sentace) {
+    // //remove space from string
+    // sentace = sentace.split(" ").join("");
+
+    //convert to array
+    sentace = sentace.split("");
+
+    let indexToRemove = [];
+
+    //iterate through arrray
+    for (let i = 0; i < sentace.length-1; i++) {
+
+      if (indexToRemove.includes(i)) continue;
+
+      for (let j = i + 1; j < sentace.length; j++) {
+
+        if (sentace[i] === sentace[j]) {
+              indexToRemove.push(j);
+        }
+      }
+
+    }
+
+    console.log(indexToRemove)
+    //filter duplicate
+    sentace = sentace.filter((item,index)=> !indexToRemove.includes(index))
+    
+    return sentace.join("");;
+  }
+</script>

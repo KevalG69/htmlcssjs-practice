@@ -1,0 +1,54 @@
+<script>
+    let sentance = "the cat hates water";
+
+    let freq = countCharFreq(sentance);
+
+    console.log(sentance,freq)
+
+    function countCharFreq(sentance) {
+        
+        //remove space 
+        sentance = sentance.split(" ").join("");
+        console.log(sentance);
+        
+        //1. first convert sentance to an array
+        sentance = sentance.split("");
+        console.log(sentance)
+        //empty object to push character and frequancy
+        let frequancy = {};
+
+        //pushing latter to array to do not count it  again
+        let latterCounted = [];
+
+        //2. iterate through array to count character frequancy
+        for (let i = 0; i < sentance.length; i++) {
+
+            //break loop and continue again if charcter is already counted
+            if(latterCounted.includes(sentance[i]))  continue;
+         
+            //if latter is not counted push it to counted
+            latterCounted.push(sentance[i]);
+
+            let count = 1; //default 1 cause character count it self first
+
+            //select on latter from sentance by i now compare it to rest
+            //of the array to find duplicate one and push it to frequncy object
+            for (let j = i + 1; j < sentance.length; j++) {
+                //if same character found
+            
+                if (sentance[i] === sentance[j]) {
+                    //increament in count
+                    count++;
+                  
+                }
+            }
+            //now push charcter and count to frequncy
+         
+            frequancy[sentance[i]] = count;
+           
+        }
+
+        //return frequancy
+        return frequancy;
+  }
+</script>

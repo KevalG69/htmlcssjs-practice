@@ -1,0 +1,15 @@
+<script>
+  const isAnagram = (str1, str2) => {
+    let sortedStr1 = str1.split("").toSorted();
+    let sortedStr2 = str2.split("").toSorted();
+
+    if (sortedStr1.toString() === sortedStr2.toString()) {
+        console.log(true);
+    }
+    else
+    {
+        console.log(false)
+    }
+  };
+  isAnagram("silent","liste");
+</script>

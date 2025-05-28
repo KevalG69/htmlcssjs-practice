@@ -1,0 +1,76 @@
+<script>
+    /* 
+        str = "{key(}"
+
+        startingParenthese.includes("{")
+        stack = ["{"]
+
+        startingParenthese.includes("(")
+        stack = ["{","("]
+
+        endingParenthese.includes("}")
+        "(" = stack.pop()
+
+        stack.pop() !== pair[char]
+                        pair= {"}":"{"}
+
+        return false
+
+        parenthese is not balanced
+    
+    */
+
+    console.log(isParentheseBalanced("(key{})"));
+    console.log(isParentheseBalanced("key.(str.()"));
+    console.log(isParentheseBalanced("({)"))
+
+  function isParentheseBalanced(str) {
+    console.log(str)
+    //stack to store parenthes
+    let stack = [];
+
+    //making parenthese pair
+    //to check if parenthese is ending then there must be starting parenthese
+    //in stack at the end
+    const pair = {
+      ")": "(",
+      "}": "{",
+      "]": "[",
+    };
+
+    const startingParenthese = ["(", "{", "["];
+    const endingParenthese = [")", "}", "]"];
+
+        //interating every single later from string
+    for (let char of str) {
+       
+      //if character have starting parthese
+      if (startingParenthese.includes(char)) {
+        //then push it to stack
+        //push starting parenthese in stack
+        //["[","{"]
+        stack.push(char);
+       
+      }
+      //if character is ending parenthese
+      else if(endingParenthese.includes(char))
+      {
+      
+        //if previous parenthese is staring parenthese and same type
+        //stack.pop will return removed last element so previous elements can be check
+        if(stack.pop() !== pair[char])
+        {
+            //if removed parathese have is does not matched pair 
+            //")" !== "{"
+            //than return false parenthese is not balanced
+            return false;
+        }
+      }
+    }
+  
+    //if there are no parenthese in stack remain return true
+    // OR parathese are in stack return false
+
+    return stack.length === 0;
+  }
+</script>

@@ -1,0 +1,28 @@
+<script>
+  let sentance = "the cat hates waters";
+
+    console.log(sentance,longWordFinder(sentance))
+
+  function longWordFinder(sentance) {
+    //convert to array
+    sentance = sentance.split(" ");
+
+    let longestWord = {
+        "word":null,
+        "wordIndex":0,
+        "wordLength":0
+    }
+    //go through array
+    for (let i = 0; i < sentance.length; i++) {
+      //get length of element
+      let currentWordLength = sentance[i].length;
+
+      if (longestWord.wordLength < currentWordLength) {
+        longestWord.wordLength = currentWordLength;
+        longestWord.word = sentance[i];
+        longestWord.wordIndex = i;
+      }
+    }
+    return longestWord;
+  }
+</script>
