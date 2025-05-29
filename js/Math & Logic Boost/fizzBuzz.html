@@ -1,0 +1,21 @@
+<script>
+    //if number is multiples of 3 print fizz 
+    //if number is multiples of 5 print Buzz
+    //if both print FizzBuzz
+
+    let n= 30;
+
+    let arry=[];//to Store new array
+
+    //iterate to n number
+    for(let i=1;i<=n;i++)
+    {
+        if(i%3==0 && i%5!=0) arry.push("Fizz");
+        if(i%5==0 && i%3!=0) arry.push("Buzz");
+        if(i%3==0 && i%5==0) arry.push("FizzBuzz");
+
+        if(i%3!=0 && i%5!=0) arry.push(i);
+    }   
+    console.log(arry.join(","));
+
+</script>

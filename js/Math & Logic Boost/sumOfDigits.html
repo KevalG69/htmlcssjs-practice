@@ -1,0 +1,18 @@
+<script>
+
+    let num = 1234;
+
+    console.log("Sum Of Digits = ",sumOfDigits(num));
+
+    function sumOfDigits (num)
+    {
+        let tempNum = num;
+        let result = 0;
+        while(tempNum>0)
+        {   
+            result = result + tempNum%10;
+            tempNum = parseInt(tempNum/10);
+        }
+        return result;
+    }
+</script>

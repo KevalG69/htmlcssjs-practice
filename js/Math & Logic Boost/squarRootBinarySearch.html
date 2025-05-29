@@ -1,0 +1,52 @@
+<script>
+    let num = 25;
+
+    console.log("Squar root",findSqrt(num))
+
+    function findSqrt(num)
+    {
+        //if number is nagative
+        if(num<0) return;
+
+        //if 0 or 1
+        if(num===0||num===1) return num;
+
+        //first set low and high 
+        //low by default 0
+        //high number 
+        //mid to store mid value (low+high/2)
+        let low =0,high = num,mid;
+        //precision which used to find difference between low and high 
+        //if precision and difference between low and high is less than precision
+        //  than square root
+        //of number is found
+        let precision = 0.00001;
+        //loop untile get precision 
+
+        while((high-low)>precision)
+        {
+            console.log(mid)
+            //1. get mid number between high and low
+            mid = (high+low)/2;
+
+            //2. check mid*mid if match to number square root is found
+            if(mid*mid ===num)
+            {
+                return mid*mid;//exact squar root
+            }
+            else if(mid*mid <num)
+            {
+                //if mid*mid is lower than num than set low to mid
+                low = mid;
+            }
+            else
+            {
+                //if mid*mid  is higher than num than set high to low
+                high = mid;
+            }
+        }
+
+        //if loop is break than squar root is found
+        return Math.ceil((high+low)/2);
+    }
+</script>

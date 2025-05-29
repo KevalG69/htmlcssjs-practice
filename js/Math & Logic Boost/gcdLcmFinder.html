@@ -1,0 +1,81 @@
+<script>
+    /*
+        GCD = greatest common divisor
+        ex gcd = 12,18
+        factor for 12 = 1,2,3,6,12
+        factor for 18 = 1,2,3,6,9,18
+        common factor = 1,2,3,6
+        max = 6
+        gcd = 6
+
+        LCM = Least Common Multiple
+        LCM(a,b) = (a*b)/gcd
+
+    */
+
+
+
+  console.log(gcdFinder(12, 18));
+  console.log(lcmFinder(12, 18));
+
+
+  function gcdFinder(num1, num2) {
+    console.log("in function");
+    //n used to loop through maximum number of num1 or num2 to get common
+    let n = 0;
+
+    //push common divisor to factores
+    let factores = [];
+
+    //to store greatest common factor
+    let ans = 1;
+    //get max number
+    if (num1 > num2) {
+      n = num1;
+    } else {
+      n = num2;
+    }
+
+    for (let i = 1; i < n; i++) {
+      console.log("in loop");
+      //check if dividable by both
+      if (num1 % i == 0 && num2 % i == 0) {
+        if (ans < i) {
+          ans = i;
+        }
+      }
+    }
+    return ans;
+  }
+
+  function lcmFinder(num1, num2) {
+    //n used to loop through maximum number of num1 or num2 to get common
+    let n = 0;
+
+    //push common divisor to factores
+    let factores = [];
+
+    //to store greatest common factor
+    let ans = 1;
+    //get max number
+    if (num1 > num2) {
+      n = num1;
+    } else {
+      n = num2;
+    }
+
+    for (let i = 1; i < n; i++) {
+      console.log("in loop");
+      //check if dividable by both
+      if (num1 % i == 0 && num2 % i == 0) {
+        if (ans < i) {
+          ans = i;
+        }
+      }
+    }
+    
+    //Least Common Multiple
+    let lcm = num1*num2;
+    return (lcm/ans);
+  }
+</script>

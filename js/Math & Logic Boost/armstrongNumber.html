@@ -1,0 +1,27 @@
+<script>
+    let num = 126;
+
+    console.log("Number is armstrong = ",armStrongNumber(num));
+
+
+    function armStrongNumber(num)
+    {
+        let tempNum = num;
+        let result = 0;
+        while(tempNum>0)
+        {
+
+            result = result+ (Math.pow(tempNum%10,3));
+            tempNum = parseInt(tempNum/10);
+            console.log(result,tempNum)
+        }
+        if(result===num)
+        {
+            return true;
+        }
+        
+        return false;
+    }
+
+
+</script>
