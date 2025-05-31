@@ -1,0 +1,54 @@
+<script>
+    let Arry = [2,4,3,4,2,0,1,3];
+
+    console.log(countSort(Arry));
+    function countSort(Arry)
+    {
+        //find maximum number in arry 
+        let maxNum = Arry[0];
+        for(let i =0;i<Arry.length;i++)
+        {
+            if(maxNum<Arry[i])
+            {
+                maxNum = Arry[i];
+            }
+        }
+
+        //create array with size of max num 
+        //push 0 in all element value
+        let countArry = [];
+        for(let i=0;i<=maxNum;i++)
+        {
+            countArry.push(0)
+        }
+        console.log(countArry,maxNum,Arry.length)
+
+        //count each array elements
+        for(let i=0;i<countArry.length;i++)
+        {
+            //iterate through array to find each element matches to index
+            let count=0;
+            for(let j=0;j<Arry.length;j++)
+            {
+                if(Arry[j]==i)
+                {
+                    count++;
+                }
+            }
+            countArry[i] = count;
+        }
+
+        //place elements back in new sorted array
+        let sortedArry = [];
+        for(let i=0;i<countArry.length;i++)
+        {
+            //iterates number of times stored in count array 
+            for(let j=0;j<countArry[i];j++)
+            {
+                sortedArry.push(i);
+            }
+        }
+
+        return sortedArry;
+    }
+</script>

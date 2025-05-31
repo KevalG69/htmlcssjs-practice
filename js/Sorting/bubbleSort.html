@@ -1,0 +1,32 @@
+<script>
+  let unSortedArry = [3, 5, 2, 1, 4, 7, 4, 6];
+
+    console.log(bubbleSort(unSortedArry));
+
+  function bubbleSort(unSortedArry) {
+    let sortedArry = [...unSortedArry]
+    console.log(sortedArry)
+    
+    let lenghtOfArry = sortedArry.length;
+
+    //iterate through array
+    for (let i = 0; i < lenghtOfArry - 1; i++) {
+      //if no sigle swap happend in array than it sorted
+      let swapped = false;
+
+      //iterate through array to compare each element and swap if needed
+      for (let j = 0; j < lenghtOfArry; j++) {
+        if (sortedArry[j] > sortedArry[j + 1]) {
+          //swap
+          let temp = sortedArry[j];
+          sortedArry[j] = sortedArry[j + 1];
+          sortedArry[j + 1] = temp;
+          swapped = true;
+        }
+      }
+
+      //if no swap during iteration means array is sorted
+      if (!swapped) return sortedArry;
+    }
+  }
+</script>

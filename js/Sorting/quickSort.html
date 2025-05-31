@@ -1,0 +1,28 @@
+<script>
+    let unSortedArry = [5,2,3,6,1,7,2,0,8];
+
+    console.log(quickSort(unSortedArry))
+    function quickSort(unSortedArry)
+    {
+        //if array lenght is 1
+        if (unSortedArry.length<=1) return unSortedArry;
+
+        //select pivote element
+        const pivote = unSortedArry[unSortedArry.length-1];
+        const left = [];
+        const right = [];
+
+        for(let i =0;i<unSortedArry.length-1;i++)
+        {
+            //if current element is greater than less than pivote element
+            //insert element to right side
+            if(unSortedArry[i]<pivote) left.push(unSortedArry[i]);
+            else right.push(unSortedArry[i]);
+        }
+
+        //do recursion until each array left 1 element
+        return [...quickSort(left),pivote,...quickSort(right)];
+
+    }
+
+</script>

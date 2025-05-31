@@ -1,0 +1,38 @@
+<script>
+    let Arry = [4,6,5,1,7,4,3,2,10,8];
+
+    console.log(sortByParity(Arry))
+    //sort array by parity
+    function sortByParity (Arry)
+    {
+        //define pointer start and end of an array
+        let start =0//start
+        let end = Arry.length-1;//end
+        
+        //loop until start is less than end means until both 
+        //point same element
+        while(start<end)
+        {
+        
+            //increment start until it finds even number
+            while(start<end&&Arry[start]%2==0)
+            {
+                console.log('Start',start)
+                start++;
+            }
+
+            //decrement end until it finds odd number
+            while(end>start&&Arry[end]%2!==0)
+            {
+                console.log("end",end)
+                end--;
+            }
+
+            //if start and end pointers find even and odd number
+            //swap even and odd numbers
+            [Arry[start],Arry[end]] = [Arry[end],Arry[start]];
+        }
+
+        return Arry;
+    }
+</script>

@@ -1,0 +1,30 @@
+<script>
+    let str = "thestring";
+
+    console.log(str,sortString(str))
+    //sorting string using bubble sort
+    function sortString(str)
+    {
+        let strArry = str.split("");
+        console.log(strArry)
+        for(let i =0;i<strArry.length-1;i++)
+        {
+            let swapped = false;
+            for(let j = 0; j<strArry.length-1;j++)
+            {
+               
+                if((strArry[j+1].charCodeAt(0))<(strArry[j].charCodeAt(0)))
+                {
+                    let temp = strArry[j+1];
+                    strArry[j+1]= strArry[j];
+                    strArry[j] = temp;
+                    swapped=true;
+                }
+            }
+
+            if(!swapped) strArry.join("");
+
+        }
+        return strArry.join("");
+    }
+</script>

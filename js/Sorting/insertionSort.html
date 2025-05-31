@@ -1,0 +1,32 @@
+<script>
+    let unSortedArry = [5,2,3,6,1,7,2,0,8];
+
+    console.log(insertionSort(unSortedArry))
+    function insertionSort(unSortedArry)
+    {
+        //iterate through array
+        for(let i=1;i<unSortedArry.length-1;i++)
+        {
+            //place current element at temporay element
+            let temp  = unSortedArry[i];
+            //now select element before temporary element
+            let j = i-1;
+
+            //loop untile there are no elements to cumpare in j
+            //or element is not greater than temp element
+            while(j>=0&&unSortedArry[j]>temp)
+            {
+                //now shift element to right if it is greater than temporary element
+                unSortedArry[j+1] = unSortedArry[j];
+                j--;
+            }
+
+            //not place tempory element to empty place
+            //after selected element
+            unSortedArry[j+1] = temp;
+        }   
+        return unSortedArry;
+    }
+
+
+</script>

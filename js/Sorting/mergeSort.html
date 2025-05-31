@@ -1,0 +1,46 @@
+<script>
+    let Arry = [5,2,3,6,1,7,2,0,8];
+    console.log(mergeSort(Arry))
+
+    function mergeSort(Arry)
+    {
+        if(Arry.length<=1) return Arry;
+
+        //dived array into sub array 
+        
+        //get mid index 
+        let mid = Math.floor(Arry.length/2);
+
+        //dived and store to left and right
+        //divide until 1 element left in array
+        let left = mergeSort(Arry.slice(0,mid));
+        let right = mergeSort(Arry.slice(mid));
+
+        return merge(left,right);
+    }
+
+    function merge(left,right)
+    {
+        let result = [];
+        let i=0,j=0;
+
+        //iterate until both array iterated
+        while(i<left.length&&j<right.length)
+        {
+            if(left[i]<right[j]) 
+            {
+                result.push(left[i]);
+                i++;
+            }
+            else 
+            {
+                result.push(right[j]);
+                j++;
+            }
+        }
+
+        //add leftover
+        return result.concat(left.slice(i)).concat(right.slice(j));
+    }
+
+</script>
