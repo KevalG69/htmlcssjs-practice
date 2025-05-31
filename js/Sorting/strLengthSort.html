@@ -1,0 +1,27 @@
+<script>
+    let Arry = ["xyz","abced","d","xy","asdfadfa","sdr","adffd"];
+
+    console.log(Arry,sortByStrLength(Arry))
+    function sortByStrLength(Arry)
+    {
+        let arry = [...Arry];
+
+        for(let i=0;i<arry.length;i++)
+        {
+            let swapped = false;
+            for(let j=0;j<arry.length-1;j++)
+            {
+                if(arry[j].length>arry[j+1].length)
+                {
+                    let temp = arry[j];
+                    arry[j] = arry[j+1];
+                    arry[j+1] = temp;
+                    swapped=true;
+                }
+            }
+
+            if(!swapped) return arry;
+        }
+        return arry;
+    }
+</script>
