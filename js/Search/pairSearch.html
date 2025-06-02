@@ -1,0 +1,14 @@
+<script>
+	let Arry = [3, 5, 2, 1, 7, 4, 3, 8, 5];
+	let sum = 7;
+
+    console.log(findPairOfSum(Arry,sum))
+	function findPairOfSum(Arry, sum) {
+		for (let i = 0; i < Arry.length-1; i++) {
+			if (Arry[i] + Arry[i + 1] == sum) {
+                return [Arry[i],Arry[i+1]];
+			}
+		}
+        return -1;
+	}
+</script>

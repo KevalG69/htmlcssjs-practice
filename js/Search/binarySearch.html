@@ -1,0 +1,63 @@
+<script>
+	let Arry = [3, 23, 25, 9, 20, 10, 2, 1, 0, 5, 7, 4];
+
+	console.log("binary Search",binarySearch(Arry,20));
+
+	function binarySearch(Arry, valueToSearch) {
+		//sort array for binary search
+	    let arry = bubbleSort(Arry);
+        console.log("sorted Array",arry);
+
+        //binary Search
+        let low = 0;//left side of arry 
+        let high = arry.length-1;//right side of arry
+        let mid;
+        //move point until pointers point at same element
+        while(low<=high)
+        {
+            //set mid value
+            mid = parseInt((high+low)/2);
+            console.log(arry.length,high,low,mid)
+            //if value found
+            if(arry[mid]==valueToSearch) return mid;
+
+            //if value is lower than value to search move low pointer to mid
+            if(arry[mid]<valueToSearch) low= mid+1;
+            //if value if higher than value to seach move high pointer to mid
+            else high = mid-1;
+        }
+        //if no value found than return not found
+        return -1;  
+	}
+
+
+
+
+
+	function bubbleSort(unSortedArry) {
+		let sortedArry = [...unSortedArry];
+		
+
+		let lenghtOfArry = sortedArry.length;
+
+		//iterate through array
+		for (let i = 0; i < lenghtOfArry - 1; i++) {
+			//if no sigle swap happend in array than it sorted
+			let swapped = false;
+
+			//iterate through array to compare each element and swap if needed
+			for (let j = 0; j < lenghtOfArry; j++) {
+				if (sortedArry[j] > sortedArry[j + 1]) {
+					//swap
+					let temp = sortedArry[j];
+					sortedArry[j] = sortedArry[j + 1];
+					sortedArry[j + 1] = temp;
+					swapped = true;
+				}
+			}
+
+			//if no swap during iteration means array is sorted
+			if (!swapped) return sortedArry;
+		}
+	}
+</script>

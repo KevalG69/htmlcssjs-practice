@@ -1,0 +1,15 @@
+<script>
+    let Arry = [2,54,6,23,21,1,12,5,9,7,8,10];
+
+    console.log(Arry,"Value At Index = ",linearSearch(Arry,21))
+    function linearSearch(arry,valueToSearch)
+    {
+        //go through array to find searched value
+        for(let i = 0;i<arry.length;i++)
+        {
+            if(arry[i]==valueToSearch) return i;
+        }
+
+        return -1;
+    }
+</script>

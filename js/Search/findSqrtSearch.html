@@ -1,0 +1,30 @@
+<script>
+	let num = 25;
+
+	console.log(findSqrt(num));
+
+	function findSqrt(num) {
+		console.log(num);
+		//defin left and right
+		let left = 0;
+		let right = num;
+		let mid;
+		let precision = 0.0001;
+
+		while ((right - left) > precision) {
+         
+			mid = (right + left) / 2;
+			
+
+			if (mid * mid == num) {
+				return mid * mid;
+			} else if (mid * mid < num) {
+				left = mid;
+			} else {
+				right = mid;
+			}
+		}
+
+		return Math.ceil((right + left) / 2);
+	}
+</script>

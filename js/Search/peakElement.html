@@ -1,0 +1,23 @@
+<script>
+    let Arry = [3,2,5,7,4,5,3,1,0,8];
+
+    console.log(peakElement(Arry))
+    function peakElement(Arry)
+    {
+        //peak elements array
+        let peakElements = [];
+
+        //iterate through array 
+        for(let i=1;i<Arry.length-2;i++)
+        {
+            //check element is peak element or not
+            if((Arry[i-1]<Arry[i])&&(Arry[i+1]<Arry[i]))
+            {
+                peakElements.push(Arry[i]);
+                console.log("push",Arry[i])
+            }
+            // console.log(peakElement)
+        }
+        return peakElements;
+    }
+</script>

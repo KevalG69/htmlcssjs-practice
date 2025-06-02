@@ -1,0 +1,41 @@
+<script>
+    //rotated arry 
+    let Arry = [5,6,7,1,2,3,4];
+
+    console.log(Arry,"Value at Index = ",rotatedArrySearch(Arry,3));
+
+    function rotatedArrySearch(Arry,valueToSearch)
+    {
+        let arry = [...Arry];
+
+        let low = 0; 
+        let high = arry.length-1;
+        let mid;
+
+        while(low<=high)
+        {
+            //find mid value
+            mid = parseInt((high+low)/2);
+
+            //if value found
+            if(arry[mid]===valueToSearch) return mid;
+
+            //check if lower side is sorted
+            if(arry[low]<=arry[mid])
+            {   
+                //if value is greater than lower side and lessthan middle element
+                //than move high pointer to mid  
+                if(valueToSearch>=arry[low]&&valueToSearch<arry[mid]) high = mid-1;
+                else low = mid+1;
+            }
+            //else means right side is sorted
+            else
+            {
+                if(valueToSearch>arry[mid]&&valueToSearch<=arry[high]) low = mid+1;
+                else high = mid-1;
+            }
+        }
+        return -1
+    }
+
+</script>

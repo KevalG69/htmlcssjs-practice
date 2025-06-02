@@ -1,0 +1,20 @@
+<script>
+
+    let matrix = [[4,5,2],
+                [3,5,6],
+                [2,1,7]];
+
+    console.log(matrixSearch(matrix,1));
+
+    function matrixSearch(matrix,valueToFind)
+    {
+        for(let row = 0;row<matrix.length;row++)
+        {
+            for(let col = 0;col<matrix.length;col++)
+            {
+                if(valueToFind==matrix[row][col]) return [row+1,col+1];
+            }
+        }
+        return -1;
+    }
+</script>

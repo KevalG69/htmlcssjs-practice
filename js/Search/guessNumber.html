@@ -1,0 +1,24 @@
+<script>
+    
+    let num = Math.floor(Math.random()*100); 
+    while(1)
+    {
+        let guess = parseInt(prompt(`Enter Number to guess ${num}`));
+
+        if(num==guess)
+        {
+            alert("You won");
+            break;
+        }
+
+        if(guess>num)
+        {
+            alert("think something lower");
+        }
+        else if(guess<num)
+        {
+            alert("think something higher");
+        }
+
+    }
+</script>
